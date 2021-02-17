@@ -15,6 +15,9 @@
   <link rel="stylesheet" href="./css/style.css">
   <script src="js/jquery-3.5.1.min.js"></script>
   <link rel="stylesheet" href="./css/filterspages.css">
+  <link rel="stylesheet" href="./css/company.css">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
+  </script>
 <body>
   <header class="header" id="header">
     <div class="header__top">
@@ -163,10 +166,32 @@
             График работы пунктов приема воды
           </a>
         </nav>
-        <div class="section__filter__wrapper">
-          <h1 class="title">
-            Фильтрующие материалы
+      </div>
+    </section>
+    <section class="section__company">
+      <div class="container company__container">
+        <div class="section__company__left">
+          <h1 class="title section__company__title">
+            Научно-производственная компания «Аква-Ресурс»
           </h1>
+          <p class="text section__company__text ">
+            Научно-производственная компания «Аква-Ресурс» предлагает весь спектр услуг в области установки и обслуживания оборудования по очистке воды. В компетенции нашей компании разработка и поставка индивидуальных технологических комплексов водоочистки, предназначенных для эксплуатации в промышленных масштабах или для бытовых нужд.
+          </p>
+          <p class="text section__company__text color__text">
+            Среди наших клиентов сотни коммерческих организаций и предприятий, тысячи семей, по достоинству оценившихнаши разработки по водоочистке.
+          </p>
+          <p class="text section__company__text ">
+            В каждом конкретном случае система водоочистки проектируется исключительно в соответствии с самыми современными технологическими достижениями в области очистки и водоподготовки питьевой воды, воды для систем охлажденияи отопительных систем, технологической и котловой воды.
+          </p>
+          <p class="text section__company__text ">
+           <span class="text color__text"> Мы постоянно занимаемся научными разработками по усовершенствованию технологий по очистке воды</span> в целях уменьшения жесткости воды и ее защиты от известковых отложений, оптимизируем средства дезинфекции, ионообмена.
+          </p>
+        </div>
+        <div class="section__company__right">
+          <img src="./image/company1.png" alt="company__img" class="section__company1__img">
+          <h2 class="title3 section__company__title3">
+            ВАС МОЖЕТ ЗАИНТЕРЕСОВАТЬ:
+          </h2>
           <ul class="section__general__sublist">
             <li class="section__general__subitem" tabindex="0">
               <button class="btn3 section__general__subitem__btn btn__general-active">
@@ -189,88 +214,131 @@
               </button>
             </li>
           </ul>
-          <div class="section__filter__subtitle__wrapper">
-            <div class="section__filter__subtitle__wrapper__left">
-              <p class="text">
-                Аква-Ресурс представляет широкий выбор фильтрующих материалов для решения различных задач в области водоподготовки. Так же мы оказываем услуги по замене фильтрующего материала (загрузки).
-              </p>
-              <p class="text">
-                Фильтрующие материалы находятся на складе в Санкт-Петербурге, доставка в любой город России транспортной компанией.
-              </p>
-              <p class="text">
-                Специалисты компании Аква-Ресурс ответят на все Ваши вопросы по телефону 942-61-91 или по форме обратной связи.
-              </p>
-              <button class="btn btn1 section__filter__subtitle__wrapper__left__btn group__btn__active">
-                Получить консультацию
-              </button>
-            </div>
-            <div class="section__filter__subtitle__wrapper__right">
-              <img src="./image/filter1.png" alt="filter__img" class="section__filter__subtitle__wrapper__img">
-            </div>
-          </div>
         </div>
       </div>
     </section>
-    <secion class="section__tables">
+    <section class="section__company2">
       <div class="container">
-        <table class="table table-bordered section__table">
-          <thead class="table__head">
-            <tr>
-              <th scope="col"> Фильтрующие материалы</th>
-              <th scope="col">Fe</th>
-              <th scope="col">Mn</th>
-              <th scope="col">H2S</th>
-              <th scope="col">Sr</th>
-              <th scope="col">Al</th>
-              <th scope="col">F</th>
-              <th scope="col">Cl</th>
-              <th scope="col">Фенол</th>
-              <th scope="col">Озон</th>
-              <th scope="col">Нефтепродукты</th>
-              <th scope="col">Взвеш. частицы</th>
-              <th scope="col">Умяшчение</th>
-              <th scope="col">Изменение pH</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="table-active ">
-            </tr>
-            <tr>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td colspan="2" class="table-active">Larry the Bird</td>
-              <td>@twitter</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </secion>
-    <section class="section__trust">
-      <div class="container trust__container">
-        <h2 class="title2 section__trust__title">
-          НАМ ДОВЕРЯЮТ
+        <h2 class="title2 section__company2__title">
+          Среди профилирующих услуг компании «Аква-Ресурс»:
         </h2>
-        <ul class="section__trust__list">
-          <li class="section__trust__item">
-            <img src="./image/trust1.png" alt="trust__img">
+        <ul class="section__company2__list">
+          <li class="section__company2__item">
+            <img src="./image/company2.svg" alt="" class="section__company2__img">
+            <p class="text section__company2__text">
+              Лабораторный анализ воды
+            </p>
           </li>
-          <li class="section__trust__item">
-            <img src="./image/trust2.png" alt="trust__img">
+          <li class="section__company2__item">
+            <img src="./image/company3.svg" alt="" class="section__company2__img">
+            <p class="text section__company2__text">
+              Мониторинг работы системы водоочистки, выявление неполадок и нарушений
+            </p>
           </li>
-          <li class="section__trust__item">
-            <img src="./image/trust3.png" alt="trust__img">
+          <li class="section__company2__item">
+            <img src="./image/company4.svg" alt="" class="section__company2__img">
+            <p class="text section__company2__text">
+              Проектирование комплексов по очистке воды «под ключ» (любой сложности)
+            </p>
           </li>
-          <li class="section__trust__item">
-            <img src="./image/trust4.png" alt="trust__img">
+          <li class="section__company2__item">
+            <img src="./image/company5.svg" alt="" class="section__company2__img">
+            <p class="text section__company2__text">
+              Проведение установкии пуско-наладочных работ оборудования
+            </p>
           </li>
-          <li class="section__trust__item">
-            <img src="./image/trust5.png" alt="trust__img">
+          <li class="section__company2__item">
+            <img src="./image/company10.svg" alt="" class="section__company2__img">
+            <p class="text section__company2__text">
+              Регулирование работы оборудования по очистке воды с помощью реагентов
+            </p>
           </li>
-          <li class="section__trust__item">
-            <img src="./image/trust6.png" alt="trust__img">
+          <li class="section__company2__item">
+            <img src="./image/company6.svg" alt="" class="section__company2__img">
+            <p class="text section__company2__text">
+              Подробные консультации по вопросам водоочистки
+            </p>
+          </li>
+          <li class="section__company2__item">
+            <img src="./image/company7.svg" alt="" class="section__company2__img">
+            <p class="text section__company2__text">
+              Разработка оборудования водоочистки
+            </p>
+          </li>
+          <li class="section__company2__item">
+            <img src="./image/company8.svg" alt="" class="section__company2__img">
+            <p class="text section__company2__text">
+              Сервисное обслуживание оборудования
+            </p>
           </li>
         </ul>
+      </div>
+    </section>
+    <section class="section__company__map">
+      <div class="container section__company__map__container">
+        <div class="section__company__map__left">
+          <div class=" order__right shadow-small section__company__map__div">
+            <p class="text order__right__description section__company__map__subtitle">
+              Пункты приема воды
+            </p>
+            <h1 class="title2 section__company__map__title">
+              Анализ воды
+            </h1>
+            <ul class="order__right__list section__company__map__list">
+              <li class="order__right__item section__company__map__item">
+                <div class="order__right__address">
+                  <span class="order__right__icon"></span>
+                  <a href="#" class="">
+                    <p class="text__company"> Московский проспект, 141А.;</p>
+                    <p class="text__company"> м. Электросила, «Салон связи»</p>
+                  </a>
+                </div>
+               <div class="section__company__map__item__text">
+                <p class="text__company order__right__text-bold__mob">
+                  Ежедневно
+                </p>
+                <h4 class="text__company order__right__title-bold__mob">
+                  с 10:00 до 20:00
+                </h4>
+               </div>
+              </li>
+              <li class="order__right__item section__company__map__item__right">
+                <div class="order__right__address">
+                  <span class="order__right__icon"></span>
+                  <a href="#" class="text__company order__right__link">
+                    <p class="text__company"> пр. Энгельсов, 115 к.1;</p>
+                    <p class="text__company"> «БиК-Сервис»</p>
+                  </a>
+                </div>
+                <h4 class="text__company order__right__title ">
+                  Пн.-Пт.:<span class="text__company">с 10:00 до 20:00</span>
+                </h4>
+                <h4 class="text__company order__right__title">
+                  Cб.:<span class="text__company">c 10:00 до 18:00</span>
+                </h4>
+                <h4 class="text__company order__right__title">
+                  Вс.: выходной
+                </h4>
+              </li>
+            </ul>
+          </div>
+          <div class="section__company__map__left__bottom">
+            <p class="text order__right__description section__company__map__subtitle">
+              Адрес офиса
+            </p>
+            <h1 class="title2 section__company__map__title">
+              «Аква-Ресурс»
+            </h1>
+            <div class="order__right__address">
+              <span class="order__right__icon"></span>
+              <a href="#" class="">
+                <p class="text__company">194017, Санкт-Петербург</p>
+                <p class="text__company">выборсгкое шоссе, 389</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div id="map" class="section__company__map__right"></div>
       </div>
     </section>
     <div class="section section__request">
@@ -298,6 +366,33 @@
         </form>
       </div>
     </div>
+    <section class="section__trust">
+      <div class="container trust__container">
+        <h2 class="title2 section__trust__title">
+          НАМ ДОВЕРЯЮТ
+        </h2>
+        <ul class="section__trust__list">
+          <li class="section__trust__item">
+            <img src="./image/trust1.png" alt="trust__img">
+          </li>
+          <li class="section__trust__item">
+            <img src="./image/trust2.png" alt="trust__img">
+          </li>
+          <li class="section__trust__item">
+            <img src="./image/trust3.png" alt="trust__img">
+          </li>
+          <li class="section__trust__item">
+            <img src="./image/trust4.png" alt="trust__img">
+          </li>
+          <li class="section__trust__item">
+            <img src="./image/trust5.png" alt="trust__img">
+          </li>
+          <li class="section__trust__item">
+            <img src="./image/trust6.png" alt="trust__img">
+          </li>
+        </ul>
+      </div>
+    </section>
   </main>
   <footer class="footer">
     <div class="container footer__container">

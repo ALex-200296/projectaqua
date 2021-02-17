@@ -2017,7 +2017,11 @@ a:focus {
 @media (max-width: 450px) {
   .section__equipment__mobule__btn:last-child {
     margin-left: 5px;
-}
+  }
+  .btn3 {
+    font-size: 12px;
+  }
+  
 }
 
 @media (max-width: 360px) {
@@ -2027,9 +2031,5 @@ a:focus {
 
   .section__general__subitem__btn  {
     white-space: nowrap;
-  }
-
-  .btn3 {
-    font-size: 14px;
   }
 }
