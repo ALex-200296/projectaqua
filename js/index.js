@@ -1,12 +1,42 @@
 $(document).ready(function () {
 
+  $('.burger1').click(function () {
+    if($('#svg1').hasClass('svg-active')) {
+      $('#header__bottom__nav1').removeClass('header__bottom__nav-active')
+      $('#svg1').removeClass('svg-active')
+      $('#svg2').addClass('svg-active')
+    } else {
+      $('#header__bottom__nav1').addClass('header__bottom__nav-active')
+      $('#svg2').removeClass('svg-active')
+      $('#svg1').addClass('svg-active')
+    }
+
+  })
+
  $('#service').click(function(event) {
-  $(this).children('button').children('ul').toggleClass('dropdown__service__list-active')
+  $(this).children('ul').toggleClass('dropdown__service__list-active1')
+  $(this).children('button').children('svg').toggleClass('header__bottom__svg-active')
  })
- $('#service > button > ul > li').click(function(event) {
+ $('#service > ul > li').click(function(event) {
   event.stopPropagation()
-  $(this).children('ul').toggleClass('dropdown__service__list2-active')
+  $(this).children('ul').toggleClass('dropdown__service__list-active1')
  })
+
+ $('#equipment').click(function(event) {
+  $(this).children('ul').toggleClass('dropdown__service__list-active1')
+  $(this).children('button').children('svg').toggleClass('header__bottom__svg-active')
+ })
+ $('#equipment > ul > li').click(function(event) {
+  event.stopPropagation()
+  $(this).children('ul').toggleClass('dropdown__service__list-active1')
+ })
+
+ $('#burger2').click(function () {
+   $('#nav__header__mobile').addClass('header__top__nav__mobile-active')
+ })
+ $('#burger3').click(function () {
+  $('#nav__header__mobile').removeClass('header__top__nav__mobile-active')
+})
 });
 
    // Функция ymaps.ready() будет вызвана, когда

@@ -278,7 +278,19 @@ a:focus {
   margin-left: auto;
 }
 
+.burger3 {
+  background-color: transparent;
+  border: none;
+  margin-left: auto;
+}
+
 /* header */
+
+/* burger */
+
+.header__top__nav__mobile {
+  display: none;
+}
 
 .burger1,
 .burger2
@@ -291,6 +303,13 @@ a:focus {
 .header__bottom__group__tel {
   display: none;
 }
+
+.svg-active {
+  display: none;
+}
+
+
+/* burger */
 
 .header a {
   color: var(--black1);
@@ -383,6 +402,7 @@ a:focus {
 }
 
 .dropdown__service__list {
+  display: none;
   min-width: 172px;
   position: absolute;
   padding: 15px 18px;
@@ -402,13 +422,6 @@ a:focus {
   color: #FFFFFF;
 }
 
-.dropdown__service__list {
-  display: none;
-}
-
-.dropdown__service__list-active {
-  display: block;
-}
 
 .dropdown__service__list2 {
   display: none;
@@ -427,10 +440,6 @@ a:focus {
   line-height: 16px;
   display: flex;
   align-items: center;
-}
-
-.dropdown__service__list2-active {
-  display: block;
 }
 
 .dropdown__service__item2:not(:first-child) {
@@ -1251,6 +1260,11 @@ a:focus {
   padding-left: 12px;
 }
 
+.dropdown__service__list-active1 {
+  display: block;
+}
+
+
 @media (max-width: 1200px) {
   .container {
     max-width: 1138px;
@@ -1258,6 +1272,76 @@ a:focus {
 }
 
 @media (max-width: 1100px) {
+
+  .dropdown__service__list  {
+    padding: 0;
+    top: 0;
+    left: 0;
+    position: inherit;
+    display: block;
+    margin-top: 19px;
+    padding-top: 19px;
+    border-top: 1px solid#2b6cc2;
+    border-radius: 0;
+    background-color: transparent;
+    display: none;
+  }
+  
+  .dropdown__service__list2 {
+    position: initial;
+    background-color: transparent;
+  }
+
+  .dropdown__service__list-active {
+    display: block;
+  }
+  
+  .dropdown__service__list2-active {
+    display: block;
+  }
+  
+  .header__bottom__svg-active {
+    transform: rotate(0);
+  }
+
+  .dropdown__service__list-active1 {
+    display: block;
+  }
+  
+
+  .header__top__nav__mobile {
+    position: absolute;
+    display: block;
+    top: 18px;
+    right: 0;
+    transition-property: transform;
+    transition-duration: 1s;
+    transform: translateX(101%);
+    z-index: 5;
+  }  
+
+  .header__top__nav__mobile-active {
+    transform: translateX(0);
+  }
+  
+  .header__top__nav__mobile ul {
+    width: 289px;
+    height: 1000px;
+    padding: 40px 38px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    background: #4F4F4F;
+    box-shadow: -5px 0px 6px rgba(0, 0, 0, 0.2);
+  }
+
+  .header__top__nav__mobile ul li {
+    margin-top: 30px;
+  }
+
+  .header__top__nav__mobile ul li a {
+    color: white;
+  }
 
   .text {
     font-style: normal;
@@ -1349,10 +1433,69 @@ a:focus {
   }
 
   .header__top,
-  .header__bottom__nav,
   .header__bottom__tel{
     display: none;
   }
+
+  .header__bottom__svg path {
+    stroke: white;
+  }
+
+  .dropdown__service__item {
+    cursor: pointer;
+  }
+
+  .dropdown__service__item:not(:last-child) {
+    padding-bottom: 14px;
+    border-bottom: none;
+ }
+
+ .header__bottom__item {
+  padding: 10px 10px;
+ }
+
+ .header__bottom__item-active {
+  border-radius: 10px;
+  background-color: #4F89D4;
+ }
+
+  .header__bottom__nav {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    transition-property: transform;
+    transition-duration: 1s;
+    transform: translate(101%);
+  }
+
+  .header__bottom__nav-active {
+    transform: translate(0);
+  }
+
+  .header__bottom__list {
+    height: 1000px;
+    width: 289px;
+    padding: 40px 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: var(--blueA2);
+  }
+
+  .header__bottom__item:not(:first-child) {
+    margin-left: 0;
+    margin-top: 30px;
+}
+
+  .header__bottom__item .header__bottom__button {
+    color: white;
+  }
+
+  .header__bottom__item a {
+   color: white; 
+  }
+
+
 
   .burger1,
   .header__bottom__group__tel {
@@ -1583,13 +1726,11 @@ a:focus {
 }
 
 @media (max-width: 768px) { 
-  
+
   .order__btn__mobile,
   .section__equipment__mobule__group {
   display: block;
   }
-
-
 
   .btn__mobile-active:active {
     color: var(--black1)
