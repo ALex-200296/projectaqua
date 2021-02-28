@@ -1,4 +1,9 @@
 $(document).ready(function () {
+  console.log('hello')
+  let bolBurger1;
+  let bolBurger2;
+  let time;
+  let time2;
 
   $('.burger1').click(function () {
     if($('#svg1').hasClass('svg-active')) {
@@ -9,26 +14,52 @@ $(document).ready(function () {
       $('#header__bottom__nav1').addClass('header__bottom__nav-active')
       $('#svg2').removeClass('svg-active')
       $('#svg1').addClass('svg-active')
+      $('#nav__header__mobile').removeClass('header__top__nav__mobile-active')
     }
 
   })
 
  $('#service').click(function(event) {
-  $(this).children('ul').toggleClass('dropdown__service__list-active1')
-  $(this).children('button').children('svg').toggleClass('header__bottom__svg-active')
- })
- $('#service > ul > li').click(function(event) {
-  event.stopPropagation()
-  $(this).children('ul').toggleClass('dropdown__service__list-active1')
- })
+  $('#equipment').children('ul').removeClass('dropdown__service__list-active1')
+  $('#equipment').children('button').children('svg').removeClass('header__bottom__svg-active')
 
- $('#equipment').click(function(event) {
+  clearTimeout(time)
+
   $(this).children('ul').toggleClass('dropdown__service__list-active1')
   $(this).children('button').children('svg').toggleClass('header__bottom__svg-active')
+  
+  if(screen.width >= 1000) {
+    time = setTimeout(() => {
+      $(this).children('ul').removeClass('dropdown__service__list-active1')
+      $(this).children('button').children('svg').removeClass('header__bottom__svg-active')
+    }, 7000)
+  }
+ })
+ 
+ $('#equipment').click(function(event) {
+  $('#service').children('ul').removeClass('dropdown__service__list-active1')
+  $('#service').children('button').children('svg').removeClass('header__bottom__svg-active')
+
+  clearTimeout(time2)
+
+  $(this).children('ul').toggleClass('dropdown__service__list-active1')
+  $(this).children('button').children('svg').toggleClass('header__bottom__svg-active')
+
+  if(screen.width >= 1100) {
+    time2 = setTimeout(() => {
+      $(this).children('ul').removeClass('dropdown__service__list-active1')
+      $(this).children('button').children('svg').removeClass('header__bottom__svg-active')
+    }, 7000)
+  }
  })
  $('#equipment > ul > li').click(function(event) {
   event.stopPropagation()
   $(this).children('ul').toggleClass('dropdown__service__list-active1')
+  if(screen.width <= 1100) {
+    $(this).children('div').children('svg').toggleClass('dropdown__service__item__wrap-active2')
+  } else {
+    $(this).children('div').children('svg').toggleClass('dropdown__service__item__wrap-active')
+  }
  })
 
  $('#burger2').click(function () {
@@ -36,6 +67,16 @@ $(document).ready(function () {
  })
  $('#burger3').click(function () {
   $('#nav__header__mobile').removeClass('header__top__nav__mobile-active')
+})
+
+window.addEventListener('scroll', ()=> {
+  $('#nav__header__mobile').removeClass('header__top__nav__mobile-active')
+
+  if($('#svg1').hasClass('svg-active')) {
+    $('#header__bottom__nav1').removeClass('header__bottom__nav-active')
+    $('#svg1').removeClass('svg-active')
+    $('#svg2').addClass('svg-active')
+  }
 })
 });
 

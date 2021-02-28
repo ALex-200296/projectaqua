@@ -414,20 +414,39 @@ a:focus {
 }
 
 .dropdown__service__item {
+  padding-right: 15px;
   position: relative;
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
   line-height: 16px;
   color: #FFFFFF;
+  cursor: pointer;
 }
 
+.dropdown__service__item__wrap {
+ position: relative;
+}
+
+.dropdown__service__item__wrap svg {
+  position: absolute;
+  top: 4px;
+  right: -13px;
+}
+
+.dropdown__service__item__wrap-active {
+  transform: rotate(90deg);
+}
+
+.dropdown__service__item__wrap-active2 {
+  transform: rotate(180deg);
+}
 
 .dropdown__service__list2 {
   display: none;
   position: absolute;
   top:-15px;
-  right: -118px;
+  right: -155px;
   padding: 18px 18px;
   background: var(--blueD4);
   border-radius:0 5px 5px 0;
@@ -1441,13 +1460,13 @@ a:focus {
     stroke: white;
   }
 
-  .dropdown__service__item {
-    cursor: pointer;
-  }
-
   .dropdown__service__item:not(:last-child) {
     padding-bottom: 14px;
     border-bottom: none;
+ }
+
+ .dropdown__service__item__wrap svg {
+   right: 30px;
  }
 
  .header__bottom__item {
@@ -1466,6 +1485,7 @@ a:focus {
     transition-property: transform;
     transition-duration: 1s;
     transform: translate(101%);
+    z-index: 10;
   }
 
   .header__bottom__nav-active {
