@@ -20,6 +20,33 @@
   </script>
 <body>
   <header class="header" id="header">
+    <nav id="nav__header__mobile" class="header__top__nav header__top__nav__mobile">
+      <ul class="header__top__list">
+        <button id="burger3" class="burger3">
+          <img src="./image/dotter2.svg" alt="burger2">
+        </button>
+        <li class="header__top__item">
+          <a href="" class="text2 header__top__link">
+            О компании
+          </a>
+        </li>
+        <li class="header__top__item">
+          <a href="" class="text2 header__top__link">
+            Статьи
+          </a>
+        </li>
+        <li class="header__top__item">
+          <a href="" class="text2 header__top__link">
+            Вопрос-ответ
+          </a>
+        </li>
+        <li class="header__top__item">
+          <a href="" class="text2 header__top__link">
+            Словарь терминов
+          </a>
+        </li>
+      </ul>
+    </nav>
     <div class="header__top">
       <div class="container header__top__container">
         <nav class="header__top__nav">
@@ -55,12 +82,18 @@
     <div class="header__bottom">
      <div class="container header__bottom__container">
       <button class="burger1">
-        <img src="./image/burger.svg" alt="burger">
+        <svg id="svg1" width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M0 2V0H18V2H0ZM0 7H18V5H0V7ZM0 12H18V10H0V12Z" fill="#1F1F1F"/>
+        </svg>          
+        <svg id="svg2" class="svg-active" width="18" height="12" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 1L19 17" stroke="black"/>
+          <path d="M21 3L3 16" stroke="black"/>
+        </svg>          
       </button>
       <a href="#">
         <img src="./image/logo.png" alt="logo">
       </a>
-      <nav class="header__bottom__nav">
+      <nav id="header__bottom__nav1" class="header__bottom__nav">
         <ul class="header__bottom__list">
           <li class="header__bottom__item">
             <a href="#" class="text header__bottom__link">
@@ -73,46 +106,21 @@
               <svg class="header__bottom__svg" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1.33331 6L5.97543 1.35788L10.6175 6" stroke="#4F89D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
+            </button>
               <ul class="dropdown__service__list">
                 <li class="dropdown__service__item">
-                  Система очистки
-                  <ul class="dropdown__service__list2">
-                    <li class="dropdown__service__item2">
-                      Для дома
-                    </li>
-                    <li class="dropdown__service__item2">
-                      Для дома
-                    </li>
-                    <li class="dropdown__service__item2">
-                      Для дома
-                    </li>
-                  </ul>
+                  Анализ воды
                 </li>
                 <li class="dropdown__service__item">
-                  Система очистки
-                  <ul class="dropdown__service__list2">
-                    <li class="dropdown__service__item2">
-                      Для дома
-                    </li>
-                    <li class="dropdown__service__item2">
-                      Для дома
-                    </li>
-                    <li class="dropdown__service__item2">
-                      Для дома
-                    </li>
-                  </ul>
+                  Проектирование и монтаж систем водоочистки 
                 </li>
                 <li class="dropdown__service__item">
-                  Система очистки
+                  Сервисное обслуживание
                 </li>
                 <li class="dropdown__service__item">
-                  Система очистки
+                  Бурение скважин на воду
                 </li>
-                <li class="dropdown__service__item">
-                  Система очистки
-                </li>
-              </ul>                
-            </button>
+              </ul>               
           </li>
           <li id="equipment" class="header__bottom__item">
             <button class="text header__bottom__button">
@@ -121,6 +129,42 @@
                 <path d="M1.33331 6L5.97543 1.35788L10.6175 6" stroke="#4F89D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>  
             </button>
+            <ul class="dropdown__service__list">
+              <li class="dropdown__service__item">
+                <div class="dropdown__service__item__wrap">
+                  Система очистки
+                  <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.33331 6L5.97543 1.35788L10.6175 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>  
+                </div>
+                <ul class="dropdown__service__list2">
+                  <li class="dropdown__service__item2">
+                    Для дома
+                  </li>
+                  <li class="dropdown__service__item2">
+                    Для котельных
+                  </li>
+                  <li class="dropdown__service__item2">
+                    Для квартир
+                  </li>
+                  <li class="dropdown__service__item2">
+                    Для коттеджей
+                  </li>
+                </ul>
+              </li>
+              <li class="dropdown__service__item">
+                Фильтры и установки
+              </li>
+              <li class="dropdown__service__item">
+                Фильтрующие материалы
+              </li>
+              <li class="dropdown__service__item">
+                Комплектующие
+              </li>
+              <li class="dropdown__service__item">
+                Системы водоотведения
+              </li>
+            </ul>               
           </li>
           <li class="header__bottom__item">
             <a href="#" class="text header__bottom__link">
@@ -146,7 +190,7 @@
         <a href="tel:">
           <img src="./image/Call.svg" alt="call">
         </a>
-        <button class="burger2">
+        <button id="burger2" class="burger2">
           <img src="./image/dotter.svg" alt="burger2">
         </button>
       </div>
