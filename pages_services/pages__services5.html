@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link 
+  rel="stylesheet" 
+  href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+  crossorigin="anonymous"
+  >
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/filterspages.css">
+  <link rel="stylesheet" href="../css/company.css">
+  <link rel="stylesheet" href="../css/services.css">
+  <script src="../js/jquery-3.5.1.min.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
+  </script>
+</head>
+<body>
+  <header class="header" id="header">
+    <nav id="nav__header__mobile" class="header__top__nav header__top__nav__mobile">
+      <ul class="header__top__list">
+        <button id="burger3" class="burger3">
+          <img src="../image/dotter2.svg" alt="burger2">
+        </button>
+        <li class="header__top__item">
+          <a href="" class="text2 header__top__link">
+            О компании
+          </a>
+        </li>
+        <li class="header__top__item">
+          <a href="" class="text2 header__top__link">
+            Статьи
+          </a>
+        </li>
+        <li class="header__top__item">
+          <a href="" class="text2 header__top__link">
+            Вопрос-ответ
+          </a>
+        </li>
+        <li class="header__top__item">
+          <a href="" class="text2 header__top__link">
+            Словарь терминов
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header__top">
+      <div class="container header__top__container">
+        <nav class="header__top__nav">
+          <ul class="header__top__list">
+            <li class="header__top__item">
+              <a href="" class="text2 header__top__link">
+                О компании
+              </a>
+            </li>
+            <li class="header__top__item">
+              <a href="" class="text2 header__top__link">
+                Статьи
+              </a>
+            </li>
+            <li class="header__top__item">
+              <a href="" class="text2 header__top__link">
+                Вопрос-ответ
+              </a>
+            </li>
+            <li class="header__top__item">
+              <a href="" class="text2 header__top__link">
+                Словарь терминов
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <label for="" class="header__top__label">
+          <input class="header__top__input" type="text">
+        </label>
+        <a href="mailto:mail@aqua-r.ru" class="header__top__mail">mail@aqua-r.ru</a>
+      </div>
+    </div>
+    <div class="header__bottom">
+     <div class="container header__bottom__container">
+      <button class="burger1">
+        <svg id="svg1" width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M0 2V0H18V2H0ZM0 7H18V5H0V7ZM0 12H18V10H0V12Z" fill="#1F1F1F"/>
+        </svg>          
+        <svg id="svg2" class="svg-active" width="18" height="12" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 1L19 17" stroke="black"/>
+          <path d="M21 3L3 16" stroke="black"/>
+        </svg>          
+      </button>
+      <a href="#">
+        <img src="../image/logo.png" alt="logo">
+      </a>
+      <nav id="header__bottom__nav1" class="header__bottom__nav">
+        <ul class="header__bottom__list">
+          <li class="header__bottom__item">
+            <a href="#" class="text header__bottom__link">
+              Анализ воды
+            </a>
+          </li>
+          <li id="service" class="header__bottom__item">
+            <button class="text header__bottom__button">
+              Услуги
+              <svg class="header__bottom__svg" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.33331 6L5.97543 1.35788L10.6175 6" stroke="#4F89D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+              <ul class="dropdown__service__list">
+                <li class="dropdown__service__item">
+                  Анализ воды
+                </li>
+                <li class="dropdown__service__item">
+                  Проектирование и монтаж систем водоочистки 
+                </li>
+                <li class="dropdown__service__item">
+                  Сервисное обслуживание
+                </li>
+                <li class="dropdown__service__item">
+                  Бурение скважин на воду
+                </li>
+              </ul>               
+          </li>
+          <li id="equipment" class="header__bottom__item">
+            <button class="text header__bottom__button">
+              Оборудование
+              <svg class="header__bottom__svg" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.33331 6L5.97543 1.35788L10.6175 6" stroke="#4F89D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>  
+            </button>
+            <ul class="dropdown__service__list">
+              <li class="dropdown__service__item">
+                <div class="dropdown__service__item__wrap">
+                  Система очистки
+                  <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.33331 6L5.97543 1.35788L10.6175 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>  
+                </div>
+                <ul class="dropdown__service__list2">
+                  <li class="dropdown__service__item2">
+                    Для дома
+                  </li>
+                  <li class="dropdown__service__item2">
+                    Для котельных
+                  </li>
+                  <li class="dropdown__service__item2">
+                    Для квартир
+                  </li>
+                  <li class="dropdown__service__item2">
+                    Для коттеджей
+                  </li>
+                </ul>
+              </li>
+              <li class="dropdown__service__item">
+                Фильтры и установки
+              </li>
+              <li class="dropdown__service__item">
+                Фильтрующие материалы
+              </li>
+              <li class="dropdown__service__item">
+                Комплектующие
+              </li>
+              <li class="dropdown__service__item">
+                Системы водоотведения
+              </li>
+            </ul>               
+          </li>
+          <li class="header__bottom__item">
+            <a href="#" class="text header__bottom__link">
+              Системы очистки
+            </a>
+          </li>
+          <li class="header__bottom__item">
+            <a href="#" class="text header__bottom__link">
+              Контакты
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__bottom__tel">
+        <p class="header__bottom__description">
+          8 (812) 385-08-06
+        </p>
+        <button href="tel:88123850806" class="btn3 header__bottom__btn btn-active">
+          Заказать звонок
+        </button>
+      </div>
+      <div class="header__bottom__group__tel">
+        <a href="tel:">
+          <img src="../image/Call.svg" alt="call">
+        </a>
+        <button id="burger2" class="burger2">
+          <img src="../image/dotter.svg" alt="burger2">
+        </button>
+      </div>
+     </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="section__filter">
+      <div class="container filter__container">
+        <nav aria-label="breadcrumb" class="section__filter__nav">
+          <ol class="breadcrumb section__filter__list">
+            <li class="breadcrumb-item"><a href="#">Главная</a></li>
+            <li class="breadcrumb-item"><a href="#">Фильтрующие материалы</a></li>
+          </ol>
+          <a href="" class="section__filter__nav__link">
+            График работы пунктов приема воды
+          </a>
+        </nav>
+      </div>
+    </section>
+    <section class="section section__pages__services5">
+      <div class="container">
+        <div class="pages__serivices__general pages__services5__wrapper1">
+          <h1 class="title pages__services5__wrapper1__title">
+            Анализ воды в Санкт-петербурге
+          </h1>
+          <p class="pages__services5__wrapper1__text">
+            Сомневаетесь в качестве воды, которая поступает к Вам по трубопроводу или из скважины? В таком случае единственный гарантированный способ защитить свое здоровье и сберечь бытовую технику – провести химический анализ воды.
+          </p>
+        </div>
+        <div class="pages__serivices__general pages__services5__wrapper2">
+          <h2 class="title2 pages__services5__wrapper2__title">
+            Что вас интересует?
+          </h2>
+          <ul class="pages__services5__wrapper2__list">
+            <li class="pages__services5__wrapper2__item">
+              <p class="pages__services5__wrapper2__item__text">
+                Стоимость анализа воды
+              </p>
+            </li>
+            <li class="pages__services5__wrapper2__item">
+              <p class="pages__services5__wrapper2__item__text">
+                Пункты приема воды для анализа
+              </p>
+            </li>
+            <li class="pages__services5__wrapper2__item">
+              <p class="pages__services5__wrapper2__item__text">
+                Самостоятельный забор воды
+              </p>
+            </li>
+            <li class="pages__services5__wrapper2__item">
+              <p class="pages__services5__wrapper2__item__text">
+                Как проходит анализ воды?
+              </p>
+            </li>
+            <li class="pages__services5__wrapper2__item">
+              <p class="pages__services5__wrapper2__item__text">
+                Когда нужен химический анализ воды?
+              </p>
+            </li>
+            <li class="pages__services5__wrapper2__item">
+              <p class="pages__services5__wrapper2__item__text">
+                Оставить заявку на анализ воды
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="pages__serivices__general pages__services5__wrapper3">
+          <h2 class="title2">
+            Стоимость анализа воды
+          </h2>
+          <ul class="pages__services5__wrapper3__list">
+            <li class="pages__services5__wrapper3__item">
+              <div class="pages__services5__wrapper3__item__header">
+                <span>
+                  <span class="pages__services5__wrapper3__item__header__number">
+                    15
+                  </span>
+                  <span class="pages__services5__wrapper3__item__header__text">
+                    показателей
+                  </span>
+                </span>
+                <svg class="pages__services5__wrapper3__item__header__line" height="1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <line y1="0.5" x2="110" y2="0.5" stroke="#C1D9F9"/>
+                </svg>
+                <span>
+                  <span class="pages__services5__wrapper3__item__header__number">
+                    900
+                  </span>
+                  <span class="pages__services5__wrapper3__item__header__text">
+                    РУБ.
+                  </span>
+                </span>
+              </div>
+              <p class="text pages__services5__wrapper3__text">
+                Химический анализ воды по 15 показателям из скважины или городского трубопровода (колодца).
+              </p>
+              <div class="pages__services5__wrapper3__btn">
+                <button class="btn1 pages__services5__wrapper3__btn btn-active">
+                  ЗАКАЗАТЬ
+                </button>
+              </div>
+            </li>
+            <li class="pages__services5__wrapper3__item">
+              <div class="pages__services5__wrapper3__item__header">
+                <span>
+                  <span class="pages__services5__wrapper3__item__header__number">
+                    20
+                  </span>
+                  <span class="pages__services5__wrapper3__item__header__text">
+                    показателей
+                  </span>
+                </span>
+                <svg class="pages__services5__wrapper3__item__header__line" width="110" height="1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <line y1="0.5" x2="110" y2="0.5" stroke="#C1D9F9"/>
+                </svg>
+                <span>
+                  <span class="pages__services5__wrapper3__item__header__number">
+                    1500
+                  </span>
+                  <span class="pages__services5__wrapper3__item__header__text">
+                    РУБ.
+                  </span>
+                </span>
+              </div>
+              <p class="text pages__services5__wrapper3__text">
+                Расширенный или БАК анализ воды по 20 показателям при подозрении на наличии в жидкости бактерий или малораспространенных элементов.
+              </p>
+              <div class="pages__services5__wrapper3__btn">
+                <button class="btn1 pages__services5__wrapper3__btn btn-active">
+                  ЗАКАЗАТЬ
+                </button>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="pages__serivices__general pages__services5__wrapper4">
+          <table class="table table-bordered section__table">
+            <thead class="table__head">
+              <tr>
+                <th scope="col">Показать</th>
+                <th scope="col">Стандартный</th>
+                <th scope="col">Расширенный</th>
+                <th scope="col">БАК анализ</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="table-active ">
+                <td>Цветность</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td></td>
+              </tr>
+              <tr class="table-active ">
+                <td>Взвешенные вещества</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td></td>
+              </tr>
+              <tr class="table-active ">
+                <td>Запач</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td></td>
+              </tr>
+              <tr class="table-active ">
+                <td>Ph (водородный показатель)</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td></td>
+              </tr>
+              <tr class="table-active ">
+                <td>Щелочность</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td></td>
+              </tr>
+              <tr class="table-active ">
+                <td>Общая жесткость</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td></td>
+              </tr>
+              <tr class="table-active ">
+                <td>Кальций</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td></td>
+              </tr>
+              <tr class="table-active ">
+                <td>Магний</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td></td>
+              </tr>
+              <tr class="table-active ">
+                <td>Железо общее</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td></td>
+              </tr>
+              <tr class="table-active ">
+                <td>Окисляемость перманганатная</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td></td>
+              </tr>
+              <tr class="table-active ">
+                <td>Хлориды</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td></td>
+              </tr>
+              <tr class="table-active ">
+                <td>Нитраты</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td></td>
+              </tr>
+              <tr class="table-active ">
+                <td>Аммоний</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td></td>
+              </tr>
+              <tr class="table-active ">
+                <td>Марганец</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td></td>
+              </tr>
+              <tr class="table-active ">
+                <td>Алюминий остаточный</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td></td>
+              </tr>
+              <tr class="table-active ">
+                <td>Сульфаты</td>
+                <td></td>
+                <td>✔</td>
+                <td></td>
+              </tr>
+              <tr class="table-active ">
+                <td>Нитраты</td>
+                <td></td>
+                <td>✔</td>
+                <td></td>
+              </tr>
+              <tr class="table-active ">
+                <td>Медь</td>
+                <td></td>
+                <td>✔</td>
+                <td></td>
+              </tr>
+              <tr class="table-active ">
+                <td>Цинк</td>
+                <td></td>
+                <td>✔</td>
+                <td></td>
+              </tr>
+              <tr class="table-active ">
+                <td>Свинец</td>
+                <td></td>
+                <td>✔</td>
+                <td></td>
+              </tr>
+              <tr class="table-active ">
+                <td>Общее микробное число при t=37 градусов</td>
+                <td></td>
+                <td></td>
+                <td>✔</td>
+              </tr>
+              <tr class="table-active ">
+                <td>Общие колиформные бактерии</td>
+                <td></td>
+                <td></td>
+                <td>✔</td>
+              </tr>
+              <tr class="table-active ">
+                <td>Термотолерантные колиформные бактерии</td>
+                <td></td>
+                <td></td>
+                <td>✔</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+               <td>Стоимость анализа</td>
+               <td>900 руб.</td> 
+               <td>1500 руб.</td>
+               <td>1500 руб.</td> 
+              </tr> 
+             </tfoot>
+          </table>
+        </div>
+        <div class=" pages__serivices__general pages__services5__wrapper5">
+          <h2 class="title2">
+            Когда нужен химический анализ воды?
+          </h2>
+          <div class="pages__services5__wrapper5__wrap">
+            <div class="pages__services5__wrapper5__left">
+              <p class="text pages__services5__wrapper5__left__text">
+                Мы рекомендуем сдать воду на анализ в Санкт-Петербурге в следующих случаях:
+              </p>
+              <ul class="pages__services5__wrapper5__left__list">
+                <li class="pages__services5__wrapper5__left__item">
+                  <p>
+                    1. Вода имеет несвойственный вкус или запах;
+                  </p>
+                </li>
+                <li class="pages__services5__wrapper5__left__item">
+                  <p>
+                    2. У Вас регулярно возникают проблемы с кожей;
+                  </p>
+                </li>
+                <li class="pages__services5__wrapper5__left__item">
+                  <p>
+                    3. Вы ждете пополнения или уже имеете ребенка;
+                  </p>
+                </li>
+                <li class="pages__services5__wrapper5__left__item">
+                  <p>
+                    4. Поблизости с Вашим домом находится пром.объект;
+                  </p>
+                </li>
+                <li class="pages__services5__wrapper5__left__item">
+                  <p>
+                    5. Вы желаете сохранить здоровье и защитить дом. технику.
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <img src="../image/services5wrap5.png" alt="services">
+          </div>
+        </div>
+        <div class=" pages__serivices__general pages__services5__wrapper6">
+          <div class="pages__services5__wrapper6__left">
+            <p class="text pages__services5__wrapper6__left__text">
+              Широко распространенным стереотипом является мнение о том, что при отсутствии у воды неприятного вкуса или запаха она совершенно безопасна.
+            </p>
+            <p class="text pages__services5__wrapper6__left__text">
+              Увы, это глубокое заблуждение. Многие болезнетворные бактерии, содержащиеся в жидкости, никак себя не проявляют, но при попадании в Ваш организм способны нанести ему значительный вред.
+            </p>
+          </div>
+          <div class="pages__services5__wrapper6__right">
+            <button class="btn1 group__btn__order pages__services5__wrapper6__right__btn  group__btn__active">
+              заказать анализ воды
+            </button>
+            <button class=" btn1 pages__services5__wrapper6__right__btn pages__services5__wrapper6__right__btn__border">
+              самостоятельный забор воды
+            </button>
+            <button class="btn1 pages__services5__wrapper6__right__btn pages__services5__wrapper6__right__btn__border">
+              пункты приема воды
+            </button>
+          </div>
+        </div>
+        <div class=" pages__serivices__general pages__services5__wrapper7">
+          <h2 class="title2">
+            Как проходит анализ воды?
+          </h2>
+          <div class="pages__services5__wrapper7__wrap">
+            <div class="pages__services5__wrapper7__left">
+              <p class="text pages__services5__wrapper7__left__text">
+                Наши специалисты:
+              </p>
+              <ul class="pages__services5__wrapper7__left__list">
+                <li class="pages__services5__wrapper7__left__item">
+                  <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="6.27539" cy="6.94629" r="6" fill="#4F89D4"/>
+                  </svg>
+                  <p class="pages__services5__wrapper7__left__item__text">
+                    Выедут на квартиру или в загородный дом
+                  </p>
+                </li>
+                <li class="pages__services5__wrapper7__left__item">
+                  <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="6.27539" cy="6.94629" r="6" fill="#4F89D4"/>
+                  </svg>
+                  <p class="pages__services5__wrapper7__left__item__text">
+                    Выедут на квартиру или в загородный дом
+                  </p>
+                </li>
+                <li class="pages__services5__wrapper7__left__item">
+                  <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="6.27539" cy="6.94629" r="6" fill="#4F89D4"/>
+                  </svg>
+                  <p class="pages__services5__wrapper7__left__item__text">
+                    Проведут химический анализ.
+                  </p>
+                </li>
+  
+                <li class="pages__services5__wrapper7__left__item">
+                  <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="6.27539" cy="6.94629" r="6" fill="#4F89D4"/>
+                  </svg>
+                  <p class="pages__services5__wrapper7__left__item__text">
+                    Предложат наиболее эффективные средства очистки.
+                  </p>
+                </li>
+                <li class="pages__services5__wrapper7__left__item">
+                  <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="6.27539" cy="6.94629" r="6" fill="#4F89D4"/>
+                  </svg>
+                  <p class="pages__services5__wrapper7__left__item__text">
+                    Осуществят монтаж фильтров.
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div class="pages__services5__wrapper7__right">
+             <p class="text">
+              Если Вы желаете сэкономить, то можете самостоятельно осуществить забор воды и доставить пробу в нашу лабораторию.
+             </p>
+              <button class="btn1 group__btn__order group__btn__active">
+                Заказать анализ воды
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="pages__serivices__general pages__services5__wrapper7">
+          <h2 class="title2">
+            Самостоятельный забор воды
+          </h2>
+          <p class="text pages__services5__wrapper7__text">
+            Для того чтобы самостоятельно осуществить забор воды необходимо строго придерживаться приведенного ниже алгоритма:
+          </p>
+          <ul class="pages__services5__wrapper7__list">
+            <li class="pages__services5__wrapper7__item">
+              <div class="pages__services5__wrapper7__item__left">
+                <span class="pages__services5__wrapper7__item__left__number">
+                  1.
+                </span>
+                <span class="text pages__services5__wrapper7__item__left__text">
+                  Возьмите пластиковую бутылку из-под простой или дистиллированной воды. 
+                </span>
+              </div>
+              <div class="pages__services5__wrapper7__item__right">       
+                <svg width="45" height="40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.4824 2.6084C8.23438 2.6084 2.35742 8.48535 2.35742 15.7334C2.35742 22.9814 8.23438 28.8584 15.4824 28.8584C22.7305 28.8584 28.6074 22.9814 28.6074 15.7334C28.6074 8.48535 22.7305 2.6084 15.4824 2.6084ZM15.4824 26.6318C9.46484 26.6318 4.58398 21.751 4.58398 15.7334C4.58398 9.71582 9.46484 4.83496 15.4824 4.83496C21.5 4.83496 26.3809 9.71582 26.3809 15.7334C26.3809 21.751 21.5 26.6318 15.4824 26.6318Z" fill="#EB5757"/>
+                  <path d="M14.0762 10.5771C14.0762 10.9501 14.2243 11.3078 14.4881 11.5715C14.7518 11.8352 15.1095 11.9834 15.4824 11.9834C15.8554 11.9834 16.2131 11.8352 16.4768 11.5715C16.7405 11.3078 16.8887 10.9501 16.8887 10.5771C16.8887 10.2042 16.7405 9.8465 16.4768 9.58278C16.2131 9.31906 15.8554 9.1709 15.4824 9.1709C15.1095 9.1709 14.7518 9.31906 14.4881 9.58278C14.2243 9.8465 14.0762 10.2042 14.0762 10.5771V10.5771ZM16.1855 13.8584H14.7793C14.6504 13.8584 14.5449 13.9639 14.5449 14.0928V22.0615C14.5449 22.1904 14.6504 22.2959 14.7793 22.2959H16.1855C16.3145 22.2959 16.4199 22.1904 16.4199 22.0615V14.0928C16.4199 13.9639 16.3145 13.8584 16.1855 13.8584Z" fill="#EB5757"/>
+                </svg>
+                <p class="text pages__services5__wrapper7__item__right__text">
+                  Важно! Не используйте емкость из-под сладких ароматизированных напитков.
+                </p>
+              </div>
+            </li>
+            <li class="pages__services5__wrapper7__item">
+              <div class="pages__services5__wrapper7__item__left">
+                <span class="pages__services5__wrapper7__item__left__number">
+                  2.
+                </span>
+                <span class="text pages__services5__wrapper7__item__left__text">
+                  Пропустите воду в течение 5-10 минут. После этого тщательно промойте Вашу тару. 
+                </span>
+              </div>
+              <div class="pages__services5__wrapper7__item__right">       
+                <svg width="50" height="40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.4824 2.6084C8.23438 2.6084 2.35742 8.48535 2.35742 15.7334C2.35742 22.9814 8.23438 28.8584 15.4824 28.8584C22.7305 28.8584 28.6074 22.9814 28.6074 15.7334C28.6074 8.48535 22.7305 2.6084 15.4824 2.6084ZM15.4824 26.6318C9.46484 26.6318 4.58398 21.751 4.58398 15.7334C4.58398 9.71582 9.46484 4.83496 15.4824 4.83496C21.5 4.83496 26.3809 9.71582 26.3809 15.7334C26.3809 21.751 21.5 26.6318 15.4824 26.6318Z" fill="#EB5757"/>
+                  <path d="M14.0762 10.5771C14.0762 10.9501 14.2243 11.3078 14.4881 11.5715C14.7518 11.8352 15.1095 11.9834 15.4824 11.9834C15.8554 11.9834 16.2131 11.8352 16.4768 11.5715C16.7405 11.3078 16.8887 10.9501 16.8887 10.5771C16.8887 10.2042 16.7405 9.8465 16.4768 9.58278C16.2131 9.31906 15.8554 9.1709 15.4824 9.1709C15.1095 9.1709 14.7518 9.31906 14.4881 9.58278C14.2243 9.8465 14.0762 10.2042 14.0762 10.5771V10.5771ZM16.1855 13.8584H14.7793C14.6504 13.8584 14.5449 13.9639 14.5449 14.0928V22.0615C14.5449 22.1904 14.6504 22.2959 14.7793 22.2959H16.1855C16.3145 22.2959 16.4199 22.1904 16.4199 22.0615V14.0928C16.4199 13.9639 16.3145 13.8584 16.1855 13.8584Z" fill="#EB5757"/>
+                </svg>
+                <p class="text pages__services5__wrapper7__item__right__text">
+                  Важно! При ополаскивании тары не используйте моющие средства.
+
+                </p>
+              </div>
+            </li>
+            <li class="pages__services5__wrapper7__item">
+              <div class="pages__services5__wrapper7__item__left">
+                <span class="pages__services5__wrapper7__item__left__number">
+                  3.
+                </span>
+                <span class="text pages__services5__wrapper7__item__left__text">
+                  Набирайте воду по краям бутылки тоненькой струей.
+                </span>
+              </div>
+              <div class="pages__services5__wrapper7__item__right">       
+                <svg width="50" height="40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.4824 2.6084C8.23438 2.6084 2.35742 8.48535 2.35742 15.7334C2.35742 22.9814 8.23438 28.8584 15.4824 28.8584C22.7305 28.8584 28.6074 22.9814 28.6074 15.7334C28.6074 8.48535 22.7305 2.6084 15.4824 2.6084ZM15.4824 26.6318C9.46484 26.6318 4.58398 21.751 4.58398 15.7334C4.58398 9.71582 9.46484 4.83496 15.4824 4.83496C21.5 4.83496 26.3809 9.71582 26.3809 15.7334C26.3809 21.751 21.5 26.6318 15.4824 26.6318Z" fill="#EB5757"/>
+                  <path d="M14.0762 10.5771C14.0762 10.9501 14.2243 11.3078 14.4881 11.5715C14.7518 11.8352 15.1095 11.9834 15.4824 11.9834C15.8554 11.9834 16.2131 11.8352 16.4768 11.5715C16.7405 11.3078 16.8887 10.9501 16.8887 10.5771C16.8887 10.2042 16.7405 9.8465 16.4768 9.58278C16.2131 9.31906 15.8554 9.1709 15.4824 9.1709C15.1095 9.1709 14.7518 9.31906 14.4881 9.58278C14.2243 9.8465 14.0762 10.2042 14.0762 10.5771V10.5771ZM16.1855 13.8584H14.7793C14.6504 13.8584 14.5449 13.9639 14.5449 14.0928V22.0615C14.5449 22.1904 14.6504 22.2959 14.7793 22.2959H16.1855C16.3145 22.2959 16.4199 22.1904 16.4199 22.0615V14.0928C16.4199 13.9639 16.3145 13.8584 16.1855 13.8584Z" fill="#EB5757"/>
+                </svg>
+                <p class="text pages__services5__wrapper7__item__right__text">
+                  Для анализа достаточно будет 1 литра воды.
+                </p>
+              </div>
+            </li>
+            <li class="pages__services5__wrapper7__item">
+              <div class="pages__services5__wrapper7__item__left">
+                <span class="pages__services5__wrapper7__item__left__number">
+                  4.
+                </span>
+                <span class="text pages__services5__wrapper7__item__left__text">
+                  Полностью наполните бутылку водой и как можно плотнее закрутите крышку.
+                </span>
+              </div>
+            </li>
+            <li class="pages__services5__wrapper7__item">
+              <div class="pages__services5__wrapper7__item__left">
+                <span class="pages__services5__wrapper7__item__left__number">
+                  5.
+                </span>
+                <span class="text pages__services5__wrapper7__item__left__text">
+                  При невозможности сразу же доставить бутылку в лабораторию – поместите ее в холодильник. 
+                </span>
+              </div>
+              <div class="pages__services5__wrapper7__item__right">       
+                <svg width="50" height="40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.4824 2.6084C8.23438 2.6084 2.35742 8.48535 2.35742 15.7334C2.35742 22.9814 8.23438 28.8584 15.4824 28.8584C22.7305 28.8584 28.6074 22.9814 28.6074 15.7334C28.6074 8.48535 22.7305 2.6084 15.4824 2.6084ZM15.4824 26.6318C9.46484 26.6318 4.58398 21.751 4.58398 15.7334C4.58398 9.71582 9.46484 4.83496 15.4824 4.83496C21.5 4.83496 26.3809 9.71582 26.3809 15.7334C26.3809 21.751 21.5 26.6318 15.4824 26.6318Z" fill="#EB5757"/>
+                  <path d="M14.0762 10.5771C14.0762 10.9501 14.2243 11.3078 14.4881 11.5715C14.7518 11.8352 15.1095 11.9834 15.4824 11.9834C15.8554 11.9834 16.2131 11.8352 16.4768 11.5715C16.7405 11.3078 16.8887 10.9501 16.8887 10.5771C16.8887 10.2042 16.7405 9.8465 16.4768 9.58278C16.2131 9.31906 15.8554 9.1709 15.4824 9.1709C15.1095 9.1709 14.7518 9.31906 14.4881 9.58278C14.2243 9.8465 14.0762 10.2042 14.0762 10.5771V10.5771ZM16.1855 13.8584H14.7793C14.6504 13.8584 14.5449 13.9639 14.5449 14.0928V22.0615C14.5449 22.1904 14.6504 22.2959 14.7793 22.2959H16.1855C16.3145 22.2959 16.4199 22.1904 16.4199 22.0615V14.0928C16.4199 13.9639 16.3145 13.8584 16.1855 13.8584Z" fill="#EB5757"/>
+                </svg>
+                <p class="text pages__services5__wrapper7__item__right__text">
+                  Важно! Не храните воду более 24 часов. Иначе забор придется повторить.
+                </p>
+              </div>
+            </li>
+            <li class="pages__services5__wrapper7__item">
+              <div class="pages__services5__wrapper7__item__left">
+                <span class="pages__services5__wrapper7__item__left__number">
+                  6.
+                </span>
+                <span class="text pages__services5__wrapper7__item__left__text">
+                  К бутылке с жидкостью необходимо приложить заметку с информацией о сборе воды.
+                </span>
+              </div>
+              <div class="pages__services5__wrapper7__item__right">       
+                <svg width="50" height="40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.4824 2.6084C8.23438 2.6084 2.35742 8.48535 2.35742 15.7334C2.35742 22.9814 8.23438 28.8584 15.4824 28.8584C22.7305 28.8584 28.6074 22.9814 28.6074 15.7334C28.6074 8.48535 22.7305 2.6084 15.4824 2.6084ZM15.4824 26.6318C9.46484 26.6318 4.58398 21.751 4.58398 15.7334C4.58398 9.71582 9.46484 4.83496 15.4824 4.83496C21.5 4.83496 26.3809 9.71582 26.3809 15.7334C26.3809 21.751 21.5 26.6318 15.4824 26.6318Z" fill="#EB5757"/>
+                  <path d="M14.0762 10.5771C14.0762 10.9501 14.2243 11.3078 14.4881 11.5715C14.7518 11.8352 15.1095 11.9834 15.4824 11.9834C15.8554 11.9834 16.2131 11.8352 16.4768 11.5715C16.7405 11.3078 16.8887 10.9501 16.8887 10.5771C16.8887 10.2042 16.7405 9.8465 16.4768 9.58278C16.2131 9.31906 15.8554 9.1709 15.4824 9.1709C15.1095 9.1709 14.7518 9.31906 14.4881 9.58278C14.2243 9.8465 14.0762 10.2042 14.0762 10.5771V10.5771ZM16.1855 13.8584H14.7793C14.6504 13.8584 14.5449 13.9639 14.5449 14.0928V22.0615C14.5449 22.1904 14.6504 22.2959 14.7793 22.2959H16.1855C16.3145 22.2959 16.4199 22.1904 16.4199 22.0615V14.0928C16.4199 13.9639 16.3145 13.8584 16.1855 13.8584Z" fill="#EB5757"/>
+                </svg>
+                <p class="text pages__services5__wrapper7__item__right__text">
+                  Важно! В заметке указать место, дату и время отбора, а также источник воды.
+                </p>
+              </div>
+            </li>
+            <li class="pages__services5__wrapper7__item">
+              <div class="pages__services5__wrapper7__item__left">
+                <span class="pages__services5__wrapper7__item__left__number">
+                  7.
+                </span>
+                <span class="text pages__services5__wrapper7__item__left__text">
+                  После этого необходимо доставить пробу в лабораторию. 
+                </span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="pages__serivices__general pages__services5__wrapper8">
+          <div class="pages__services5__wrapper8__left">
+            <div class=" order__right shadow-small section__company__map__div pages__services5__wrapper8__left__wrap">
+              <p class="text order__right__description section__company__map__subtitle">
+                Пункты приема воды
+              </p>
+              <h1 class="title2 section__company__map__title">
+                Анализ воды
+              </h1>
+              <ul class="order__right__list section__company__map__list">
+                <li class="order__right__item section__company__map__item">
+                  <div class="order__right__address">
+                    <span class="order__right__icon"></span>
+                    <a href="#" class="">
+                      <p class="text__company"> Московский проспект, 141А.;</p>
+                      <p class="text__company"> м. Электросила, «Салон связи»</p>
+                    </a>
+                  </div>
+                 <div class="section__company__map__item__text">
+                  <p class="text__company order__right__text-bold__mob">
+                    Ежедневно
+                  </p>
+                  <h4 class="text__company order__right__title-bold__mob">
+                    с 10:00 до 20:00
+                  </h4>
+                 </div>
+                </li>
+                <li class="order__right__item section__company__map__item__right">
+                  <div class="order__right__address">
+                    <span class="order__right__icon"></span>
+                    <a href="#" class="text__company order__right__link">
+                      <p class="text__company"> пр. Энгельсов, 115 к.1;</p>
+                      <p class="text__company"> «БиК-Сервис»</p>
+                    </a>
+                  </div>
+                  <h4 class="text__company order__right__title ">
+                    Пн.-Пт.:<span class="text__company">с 10:00 до 20:00</span>
+                  </h4>
+                  <h4 class="text__company order__right__title">
+                    Cб.:<span class="text__company">c 10:00 до 18:00</span>
+                  </h4>
+                  <h4 class="text__company order__right__title">
+                    Вс.: выходной
+                  </h4>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="pages__services5__wrapper8__center">
+            <img class="pages__services5__wrapper8__center__img" src="../image/services5wrap8.png" alt="servicesmap">
+            <img class="pages__services5__wrapper8__center__img" src="../image/services5wrap7.png" alt="servicesmap">
+          </div>
+          <div id="map" class="pages__services5__wrapper8__right"></div>
+        </div>
+      </div>
+    </section>
+    <section class="section section__request">
+      <div class="container requset__container">
+        <form action="" class="section__request__form">
+          <h2 class="title2 section__request__title">
+            ОСТАВИТЬ ЗАЯВКУ
+          </h2>
+          <p class="title4 section__request__text">
+            Наши менеджеры свяжутся с вами в ближайшее время
+          </p>
+          <div class="section__request__group">
+            <div class="section__request__left">
+              <input type="text" class="section__request__input" placeholder="ФИО">
+              <input type="tel" class="section__request__input" placeholder="Телефон">
+              <input type="text" class="section__request__input" placeholder="E-mail">
+            </div>
+            <div class="section__request__right">
+              <textarea id="" class="section__request__textarea" placeholder="Ваше сообщение"></textarea>
+            </div>
+          </div>
+          <button class="btn btn1 section__request__btn group__btn__active">
+            ОСТАВИТЬ ЗАЯВКУ
+          </button>
+        </form>
+      </div>
+    </section>
+    <section class="section__trust">
+      <div class="container trust__container">
+        <h2 class="title2 section__trust__title">
+          НАМ ДОВЕРЯЮТ
+        </h2>
+        <ul class="section__trust__list">
+          <li class="section__trust__item">
+            <img src="../image/trust1.png" alt="trust__img">
+          </li>
+          <li class="section__trust__item">
+            <img src="../image/trust2.png" alt="trust__img">
+          </li>
+          <li class="section__trust__item">
+            <img src="../image/trust3.png" alt="trust__img">
+          </li>
+          <li class="section__trust__item">
+            <img src="../image/trust4.png" alt="trust__img">
+          </li>
+          <li class="section__trust__item">
+            <img src="../image/trust5.png" alt="trust__img">
+          </li>
+          <li class="section__trust__item">
+            <img src="../image/trust6.png" alt="trust__img">
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__top">
+        <a href="">
+          <img src="../image/footerlogo.png" alt="footer__img">
+        </a>
+        <form action="" class="footer__top__form">
+          <h3 class="title3 footer__top__title">
+            ЕСТЬ ВОПРОСЫ? НАПИШИТЕ НАМ!
+          </h3>
+          <div class="footer__top__group">
+            <input type="text" placeholder="Введите ваш Email">
+            <button class="btn btn1 footer__top__btn group__btn__active">
+              ПОДПИСАТЬСЯ
+            </button>
+          </div>
+        </form>
+        <div class="footer__top__right__group">
+          <p class="title2 footer__top__tel">
+            8 (812) 385-08-06
+          </p>
+          <button class="btn-active btn__top__right__btn">
+            Заказать обратный звонок
+          </button>
+        </div>
+      </div>
+      <div class="footer__center">
+        <ul class="footer__center__wrapper">
+          <li class="footer__left">
+            <h3 class="title3 footer__left__equipment__title">ОБОРУДОВАНИЕ</h3>
+            <ul class="footer__left__list">
+              <li class="footer__item footer__left__item">
+                <a href="" class="text2 btn-active">Фильтры обезжелезирования воды: виды</a>
+              </li>
+              <li class="footer__item footer__left__item">
+                <a href="" class="text2 btn-active">Фильтры умягчения воды: снижение солей жесткости</a>
+              </li>
+              <li class="footer__item footer__left__item">
+                <a href="" class="text2 btn-active">Фильтры сорбционные</a>
+              </li>
+              <li class="footer__item footer__left__item">
+                <a href="" class="text2 btn-active">Ультрафиолетовые установки для обеззараживания воды</a>
+              </li>
+              <li class="footer__item footer__left__item">
+                <a href="" class="text2 btn-active">Фильтры грубой очистки воды</a>
+              </li>
+              <li class="footer__item footer__left__item">
+                <a href="" class="text2 btn-active">Фильтры мешочного типа</a>
+              </li>
+              <li class="footer__item footer__left__item">
+                <a href="" class="text2 btn-active">Фильтры для удаления нитратов</a>
+              </li>
+              <li class="footer__item footer__left__item">
+                <a href="" class="text2 btn-active">Дисковые фильтры AZUD</a>
+              </li>
+              <li class="footer__item footer__left__item">
+                <a href="" class="text2 btn-active">Бытовые фильтры для очистки воды</a>
+              </li>
+              <li class="footer__item footer__left__item">
+                <a href="" class="text2 btn-active">Бытовые фильтры для очистки воды</a>
+              </li>
+              <li class="footer__item footer__left__item">
+                <a href="" class="text2 btn-active">Установки ультрафильтрации воды</a>
+              </li>
+              <li class="footer__item footer__left__item">
+                <a href="" class="text2 btn-active">Мультипатронные фильтры</a>
+              </li>
+            </ul>
+          </li>
+          <li class="footer__center__center">
+            <div class="footer__center__service">
+              <h3 class="title3 footer__center__service__title">
+                УСЛУГИ
+              </h3>
+              <ul class="footer__center__service__list">
+                <li class="footer__item footer__center__service__item">
+                  <a href="" class="text2 btn-active">
+                    Проектирование и монтаж систем водоочистки
+                  </a>
+                </li>
+                <li class="footer__item footer__center__service__item">
+                  <a href="" class="text2 btn-active">
+                    Сервисное обслуживание
+                  </a>
+                </li>
+                <li class="footer__item footer__center__service__item">
+                  <a href="" class="text2 btn-active">
+                    Анализ воды в Санкт-Петербурге
+                  </a>
+                </li>
+                <li class="footer__item footer__center__service__item">
+                  <a href="" class="text2 btn-active">
+                    Бурение скважин на воду
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__center__material">
+              <h3 class="title3 footer__center__material__title">
+                ФИЛЬТРУЮЩИЕ МАТЕРИАЛЫ
+              </h3>
+              <ul class="footer__center__material__list">
+                <li class="footer__itemfooter__center__material__item">
+                  <a href="" class="text2 btn-active">
+                    Фильтрующие среды
+                  </a>
+                </li>
+                <li class="footer__itemfooter__center__material__item">
+                  <a href="" class="text2 btn-active">
+                    Ионообменные смолы
+                  </a>
+                </li>
+                <li class="footer__itemfooter__center__material__item">
+                  <a href="" class="text2 btn-active">
+                    Химические реагенты
+                  </a>
+                </li>
+                <li class="footer__itemfooter__center__material__item">
+                  <a href="" class="text2 btn-active">
+                    Активированный кокосовый уголь для очистки воды
+                  </a>
+                </li><li class="footer__itemfooter__center__material__item">
+                  <a href="" class="text2 btn-active">
+                    Многофункциональные ионообменные загрузки
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="footer__right">
+            <div class="footer__right__system">
+              <h3 class="title3 footer__right__system__title">
+                СИСТЕМЫ ОЧИСТКИ ВОДЫ
+              </h3>
+              <ul class="footer__right__system__lst">
+                <li class="footer__item footer__right__system__item">
+                  <a href="" class="text2 btn-active">
+                    Для производств
+                  </a>
+                </li>
+                <li class="footer__item footer__right__system__item">
+                  <a href="" class="text2 btn-active">
+                    Для котельных
+                  </a>
+                </li>
+                <li class="footer__item footer__right__system__item">
+                  <a href="" class="text2 btn-active">
+                    Для квартир
+                  </a>
+                </li>
+                <li class="footer__item footer__right__system__item">
+                  <a href="" class="text2 btn-active">
+                    Для производств
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__right__info">
+              <h3 class="title3 footer__right__info__title">
+                ПОЛЕЗНАЯ ИНФОРМАЦИЯ
+              </h3>
+              <ul class="footer__right__info__list">
+                <li class="footer__item footer__right__ifnfo__item">
+                  <a href="" class="text2 btn-active">
+                    Словарь терминов
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+        <div class="container footer__bottom__container">
+          <p>© 2021, Fas Production</p>
+          <a href="#header" class=" btn-active footer__bottom__link">Наверх</a>
+        </div>
+    </div>
+  </footer>
+  <script src="../js/index.js"></script>
+</body>
+</html>
