@@ -10,6 +10,10 @@
   --grey99: #929599;
 }
 
+.pages__serivices__general {
+  margin-top: 90px;
+}
+
 /* pages1 */
 .section__pages__services1 {
   margin-top: 60px;
@@ -320,6 +324,16 @@ margin-top: 40px;
 /* services3wrap4 */
 .pages__services3__wrapper4__text {
   margin-top: 20px;
+}
+
+/* services4 */
+
+.pages__services4__wrapper1 img {
+  border-radius: 10px;
+}
+
+.pages__services4__wrapper2__text {
+  margin-top: 40px;
 }
 
 @media (max-width: 950px) {
