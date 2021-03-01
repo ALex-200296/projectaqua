@@ -1,6 +1,5 @@
+const item = document.querySelectorAll('.pages__questions__item');
 $(document).ready(function () {
-  console.log('hello')
-  let bolBurger1;
   let bolBurger2;
   let time;
   let time2;
@@ -79,6 +78,20 @@ window.addEventListener('scroll', ()=> {
   }
 })
 });
+
+  //pages__questions
+  item.forEach( function(i) {
+    const li  = i.childNodes[1];
+    const p = i.childNodes[3];
+    li.addEventListener('click', () => {
+      if(p.style.maxHeight) {
+        p.style.maxHeight = null;
+      }else{
+        p.style.maxHeight = p.scrollHeight + 'px';
+      };
+    });
+  });
+  //pages__questions
 
    // Функция ymaps.ready() будет вызвана, когда
     // загрузятся все компоненты API, а также когда будет готово DOM-дерево.

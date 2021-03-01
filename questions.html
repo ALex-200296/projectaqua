@@ -5,19 +5,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-</head>
-<link 
+  <link 
     rel="stylesheet" 
     href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
     crossorigin="anonymous"
   >
   <link rel="stylesheet" href="./css/style.css">
-  <script src="js/jquery-3.5.1.min.js"></script>
   <link rel="stylesheet" href="./css/filterspages.css">
-  <link rel="stylesheet" href="./css/company.css">
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
-  </script>
+  <link rel="stylesheet" href="./css/question.css">
+  <script src="js/jquery-3.5.1.min.js"></script>
+</head>
 <body>
   <header class="header" id="header">
     <nav id="nav__header__mobile" class="header__top__nav header__top__nav__mobile">
@@ -202,9 +200,8 @@
       <div class="container filter__container">
         <nav aria-label="breadcrumb" class="section__filter__nav">
           <ol class="breadcrumb section__filter__list">
-            <li class="breadcrumb-item"><a href="#" class="section__filter__item">Главная</a></li>
-            <li class="breadcrumb-item"><a href="#" class="section__filter__item">Фильтры</a></li>
-            <li class="breadcrumb-item active" aria-current="page" class="section__filter__item">Data</li>
+            <li class="breadcrumb-item"><a href="#">Главная</a></li>
+            <li class="breadcrumb-item"><a href="#">Вопрос-ответ</a></li>
           </ol>
           <a href="" class="section__filter__nav__link">
             График работы пунктов приема воды
@@ -212,177 +209,155 @@
         </nav>
       </div>
     </section>
-    <section class="section__company">
-      <div class="container company__container">
-        <div class="section__company__left">
-          <h1 class="title section__company__title">
-            Научно-производственная компания «Аква-Ресурс»
-          </h1>
-          <p class="text section__company__text ">
-            Научно-производственная компания «Аква-Ресурс» предлагает весь спектр услуг в области установки и обслуживания оборудования по очистке воды. В компетенции нашей компании разработка и поставка индивидуальных технологических комплексов водоочистки, предназначенных для эксплуатации в промышленных масштабах или для бытовых нужд.
-          </p>
-          <p class="text section__company__text color__text">
-            Среди наших клиентов сотни коммерческих организаций и предприятий, тысячи семей, по достоинству оценившихнаши разработки по водоочистке.
-          </p>
-          <p class="text section__company__text ">
-            В каждом конкретном случае система водоочистки проектируется исключительно в соответствии с самыми современными технологическими достижениями в области очистки и водоподготовки питьевой воды, воды для систем охлажденияи отопительных систем, технологической и котловой воды.
-          </p>
-          <p class="text section__company__text ">
-           <span class="text color__text"> Мы постоянно занимаемся научными разработками по усовершенствованию технологий по очистке воды</span> в целях уменьшения жесткости воды и ее защиты от известковых отложений, оптимизируем средства дезинфекции, ионообмена.
-          </p>
-        </div>
-        <div class="section__company__right">
-          <img src="./image/company1.png" alt="company__img" class="section__company1__img">
-          <h2 class="title3 section__company__title3">
-            ВАС МОЖЕТ ЗАИНТЕРЕСОВАТЬ:
-          </h2>
-          <ul class="section__general__sublist">
-            <li class="section__general__subitem" tabindex="0">
-              <button class="btn3 section__general__subitem__btn btn__general-active">
-                Фильтрующие среды
-              </button>
-            </li>
-            <li class="section__general__subitem" tabindex="0">
-              <button class="btn3 section__general__subitem__btn btn__general-active">
-                Активированный кокосовый уголь
-              </button>
-            </li>
-            <li class="section__general__subitem" tabindex="0">
-              <button class="btn3 section__general__subitem__btn btn__general-active">
-                Активированный кокосовый уголь
-              </button>
-            </li>
-            <li class="section__general__subitem" tabindex="0">
-              <button class="btn3 section__general__subitem__btn btn__general-active">
-                Химические реагенты
-              </button>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <section class="section__company2">
+    <section class="section__pages__questions">
       <div class="container">
-        <h2 class="title2 section__company2__title">
-          Среди профилирующих услуг компании «Аква-Ресурс»:
-        </h2>
-        <ul class="section__company2__list">
-          <li class="section__company2__item">
-            <img src="./image/company2.svg" alt="" class="section__company2__img">
-            <p class="text section__company2__text">
-              Лабораторный анализ воды
+        <h1 class="title">Вопрос-ответ</h1>
+        <ul class="pages__questions__list">
+          <li class="pages__questions__item">
+            <div>
+              <a class="title3 pages__questions__link">
+                После приема душа остается ощущение «мылкости». Вредно ли это?
+              </a>
+              <button class="pages__questions__btn">           
+                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="25" cy="25" r="25" fill="#E5EDF6"/>
+                  <path d="M24.275 24.4865V16.6115H26.165V24.4865H34.04V26.3765H26.165V34.2515H24.275V26.3765H16.4V24.4865H24.275Z" fill="#1F1F1F"/>
+                </svg>
+              </button>
+            </div>
+            <p class="text pages__questions__text">
+              Субъективное ощущение «несмываемости» мыла связано с мягкостью Вашей воды. В отличие от жесткой воды, содержание солей в ней в норме, за счет чего она не разрушает тонкую жировую пленку, которая оберегает Вашу кожу от внешних воздействий. Она и создает ощущение «мылкости».
+
+              Это совсем не вредно, а вовсе наоборот.<br/><br/> К сожалению, нам привычнее до скрипа натирать кожу в жесткой воде, а потом восстанавливать защитный слой с помощью всевозможных лосьонов и кремов.
             </p>
           </li>
-          <li class="section__company2__item">
-            <img src="./image/company3.svg" alt="" class="section__company2__img">
-            <p class="text section__company2__text">
-              Мониторинг работы системы водоочистки, выявление неполадок и нарушений
+          <li class="pages__questions__item">
+            <div>
+              <a class="title3 pages__questions__link">
+                Хочу установить систему очистки воды в загородный дом. Сколько места для этого необходимо, и какое помещение лучше всего использовать?
+              </a>
+              <button class="pages__questions__btn">           
+                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="25" cy="25" r="25" fill="#E5EDF6"/>
+                  <path d="M24.275 24.4865V16.6115H26.165V24.4865H34.04V26.3765H26.165V34.2515H24.275V26.3765H16.4V24.4865H24.275Z" fill="#1F1F1F"/>
+                </svg>
+              </button>
+            </div>
+            <p class="text pages__questions__text">
+              По возможности, мы используем наиболее компактные системы водоочистки. В среднем они занимают от 1 м^2 до 2,5 м^2. Также для обслуживания установки рекомендуется обеспечить дополнительное свободное пространство.
+              Размещать системы водоочистки лучше всего <br/><br/>в подсобных помещениях, к примеру, в котельной или подвале. Главное — это соблюдение температурного режима — не ниже 5 градусов, наличие электричества, возможность подвода и отвода воды.
             </p>
           </li>
-          <li class="section__company2__item">
-            <img src="./image/company4.svg" alt="" class="section__company2__img">
-            <p class="text section__company2__text">
-              Проектирование комплексов по очистке воды «под ключ» (любой сложности)
+          <li class="pages__questions__item">
+            <div>
+              <a class="title3 pages__questions__link">
+                В магазине видел фильтры от 300 рублей? Скажите, имеет ли смысл покупать их?
+              </a>
+              <button class="pages__questions__btn">           
+                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="25" cy="25" r="25" fill="#E5EDF6"/>
+                  <path d="M24.275 24.4865V16.6115H26.165V24.4865H34.04V26.3765H26.165V34.2515H24.275V26.3765H16.4V24.4865H24.275Z" fill="#1F1F1F"/>
+                </svg>
+              </button>
+            </div>
+            <p class="text pages__questions__text">
+              Конечно же, фильтры за 300 рублей вряд ли будут эффективны. Более того, они могут быть выполнены из опасных токсичных материалов, что нанесет вред Вашему здоровью. Помимо прочего необходимо обращать внимание не только на цену, но и на производителя оборудования.
+              <br/><br/>Также помните, что любой, самый дорогой фильтр будет неэффективен, если он направлен на очищение не от тех загрязнителей, которые присутствуют в Вашей воде. Конечно же, эффекта будем мало, если в жидкости превышено содержание хлоридов, а Вы устанавливаете фильтр-обезжелезиватель. Поэтому приобретать систему водоочистки рекомендуется на основании химического анализа.  
             </p>
           </li>
-          <li class="section__company2__item">
-            <img src="./image/company5.svg" alt="" class="section__company2__img">
-            <p class="text section__company2__text">
-              Проведение установкии пуско-наладочных работ оборудования
+          <li class="pages__questions__item">
+            <div>
+              <a class="title3 pages__questions__link">
+                Почему вода из-под крана имеет солоноватый привкус?
+              </a>
+              <button class="pages__questions__btn">           
+                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="25" cy="25" r="25" fill="#E5EDF6"/>
+                  <path d="M24.275 24.4865V16.6115H26.165V24.4865H34.04V26.3765H26.165V34.2515H24.275V26.3765H16.4V24.4865H24.275Z" fill="#1F1F1F"/>
+                </svg>
+              </button>
+            </div>
+            <p class="text pages__questions__text">
+              Как правило, солоноватый привкус связан с присутствием в воде хлорид-ионов. При повышенной концентрации вещества опасны для Вашего здоровья. Помимо этого, они делают воду непригодной для использования в технических и хозяйственных целях, поскольку ведут к поломке бытовых приборов и гибели сельскохозяйственных культур.
+              <br/><br/>При подозрении на содержание хлоридов в Вашей воде необходимо прекратить ее потребление и провести химический анализ. При подтверждении повышенного содержания вредных веществ требуется установить специальный фильтр и только после этого использовать воду по назначению.
             </p>
           </li>
-          <li class="section__company2__item">
-            <img src="./image/company10.svg" alt="" class="section__company2__img">
-            <p class="text section__company2__text">
-              Регулирование работы оборудования по очистке воды с помощью реагентов
+          <li class="pages__questions__item">
+            <div>
+              <a class="title3 pages__questions__link">
+                Вредна ли концентрация железа в воде 1 мг/л?
+              </a>
+              <button class="pages__questions__btn">           
+                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="25" cy="25" r="25" fill="#E5EDF6"/>
+                  <path d="M24.275 24.4865V16.6115H26.165V24.4865H34.04V26.3765H26.165V34.2515H24.275V26.3765H16.4V24.4865H24.275Z" fill="#1F1F1F"/>
+                </svg>
+              </button>
+            </div>
+            <p class="text pages__questions__text">
+              Государственными нормами установлено предельно допустимое содержание железа в воде 0,3 мг/л. Однако это связано лишь с органолептическими свойствами, т.е. превышение указанного показателя ведет к ухудшению вкусовых качеств.
+              <br/><br/>О негативном влиянии на организм избытка в воде железа достоверных сведений не имеется. Встречаются лишь отдельные публикации о влиянии на печень, почки и другие органы. Помимо этого, некоторые ученые убеждены в том, что избыток железа вызывает аллергические реакции и оказывает токсическое воздействие.              
+              <br/><br/>Пусть достоверных сведений по вопросу избыточного содержания железа в воде не имеется, однако совершенно точно, что пользы от этого никакой. Поэтому в Вашем случае мы рекомендуем приобрести обезжелезивающие фильтры. Они избавят воду от неприятного привкуса и сохранят Ваше здоровье.
             </p>
           </li>
-          <li class="section__company2__item">
-            <img src="./image/company6.svg" alt="" class="section__company2__img">
-            <p class="text section__company2__text">
-              Подробные консультации по вопросам водоочистки
+          <li class="pages__questions__item">
+            <div>
+              <a class="title3 pages__questions__link">
+                Как выбрать фильтр для квартиры? Какие типы и модели вы можете порекомендовать?
+              </a>
+              <button class="pages__questions__btn">           
+                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="25" cy="25" r="25" fill="#E5EDF6"/>
+                  <path d="M24.275 24.4865V16.6115H26.165V24.4865H34.04V26.3765H26.165V34.2515H24.275V26.3765H16.4V24.4865H24.275Z" fill="#1F1F1F"/>
+                </svg>
+              </button>
+            </div>
+            <p class="text pages__questions__text">
+              Прежде всего, необходимо решить для каких целей Вы планируете использовать воду. Для применения в питьевых целях рекомендуем использовать обратный осмос — он эффективно очищает воду от всех видов загрязнителей
+              <br/><br/>Однако если Вы используете воду только для мытья или в технических целях, то необязательно тратиться на столь дорогостоящие системы очистки. Для того чтобы сохранить здоровье кожи и предотвратить поломки бытовых приборов достаточно очищать жидкость от конкретного загрязнителя, норма которого превышена.
+              <br/><br/>Определить содержание вредных веществ в Вашей воде поможет химический анализ. На его основании мы предложим Вам наиболее эффективный фильтр.
             </p>
           </li>
-          <li class="section__company2__item">
-            <img src="./image/company7.svg" alt="" class="section__company2__img">
-            <p class="text section__company2__text">
-              Разработка оборудования водоочистки
+          <li class="pages__questions__item">
+            <div>
+              <a class="title3 pages__questions__link">
+                У меня всегда очень сухие волосы. Скажите, может ли это быть из-за воды?
+              </a>
+              <button class="pages__questions__btn">           
+                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="25" cy="25" r="25" fill="#E5EDF6"/>
+                  <path d="M24.275 24.4865V16.6115H26.165V24.4865H34.04V26.3765H26.165V34.2515H24.275V26.3765H16.4V24.4865H24.275Z" fill="#1F1F1F"/>
+                </svg>
+              </button>
+            </div>
+            <p class="text pages__questions__text">
+              Причин сухости волос может быть много и за консультацией Вам лучше обратиться к врачу-дерматологу. Однако вероятность того, что причина в воде, которой вы моетесь, действительно существует.
+              <br/><br/>В жесткой воде превышено содержание магния, железа и кальция, что делает волосы сухими, жесткими и сложно поддающимися укладке. Большинство считают, что проблема в шампунеи экспериментируют с различными средствами. Однако основной компонент мытья волос — это вода, а не шампунь.              
+              <br/><br/>Основными признаками жесткой воды являются белесый налет в виде линий в душе, низкое вспенивание мыла и шампуня, налет в чайнике и желтеющая после стирки одежда.
+              <br/><br/>Для того чтобы убедиться, что причина Ваших проблем с волосами — это именно вода, рекомендуем провести химический анализ. При подтверждении подозрений мы предложим Вам специализированные фильтры, которые умягчат Вашу воду.
             </p>
           </li>
-          <li class="section__company2__item">
-            <img src="./image/company8.svg" alt="" class="section__company2__img">
-            <p class="text section__company2__text">
-              Сервисное обслуживание оборудования
+          <li class="pages__questions__item">
+            <div>
+              <a class="title3 pages__questions__link">
+                Могу ли я самостоятельно отобрать воду на анализ?
+              </a>
+              <button class="pages__questions__btn">           
+                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="25" cy="25" r="25" fill="#E5EDF6"/>
+                  <path d="M24.275 24.4865V16.6115H26.165V24.4865H34.04V26.3765H26.165V34.2515H24.275V26.3765H16.4V24.4865H24.275Z" fill="#1F1F1F"/>
+                </svg>
+              </button>
+            </div>
+            <p class="text pages__questions__text">
+              Да, Вы можете самостоятельно отобрать воду на анализ. Для этого Вам необходимо взять пластиковую бутылку из-под простой или дистиллированной воды. Использовать тару из-под сладких ароматизированных напитков запрещено.
+             <br/><br/> Для того, чтобы избежать попадания застоявшейся воды рекомендуется пропустить ее в течение 5-10 минут. Затем рекомендуется тщательно промыть бутылку водой, которую Вы берете на анализ, без использования моющих средств.
+              <br/><br/>Набирать жидкость рекомендуется тонкой струей по краям бутылки. Это предотвратит протекание химических реакций в результате насыщения ее кислородом.
+              <br/><br/>Необходимо полностью наполнить тару и плотно закрыть крышку для предотвращения попадания воздуха. После этого, если невозможно сразу же отвести воду в лабораторию, рекомендуется хранить ее в холодильнике, но не более 24 часов.
+              <br/><br/>Пробу необходимо сопроводить пояснительной запиской, в которой указать место, время и дату отбора и источник воды.
             </p>
           </li>
         </ul>
-      </div>
-    </section>
-    <section class="section__company__map">
-      <div class="container section__company__map__container">
-        <div class="section__company__map__left">
-          <div class=" order__right shadow-small section__company__map__div">
-            <p class="text order__right__description section__company__map__subtitle">
-              Пункты приема воды
-            </p>
-            <h1 class="title2 section__company__map__title">
-              Анализ воды
-            </h1>
-            <ul class="order__right__list section__company__map__list">
-              <li class="order__right__item section__company__map__item">
-                <div class="order__right__address">
-                  <span class="order__right__icon"></span>
-                  <a href="#" class="">
-                    <p class="text__company"> Московский проспект, 141А.;</p>
-                    <p class="text__company"> м. Электросила, «Салон связи»</p>
-                  </a>
-                </div>
-               <div class="section__company__map__item__text">
-                <p class="text__company order__right__text-bold__mob">
-                  Ежедневно
-                </p>
-                <h4 class="text__company order__right__title-bold__mob">
-                  с 10:00 до 20:00
-                </h4>
-               </div>
-              </li>
-              <li class="order__right__item section__company__map__item__right">
-                <div class="order__right__address">
-                  <span class="order__right__icon"></span>
-                  <a href="#" class="text__company order__right__link">
-                    <p class="text__company"> пр. Энгельсов, 115 к.1;</p>
-                    <p class="text__company"> «БиК-Сервис»</p>
-                  </a>
-                </div>
-                <h4 class="text__company order__right__title ">
-                  Пн.-Пт.:<span class="text__company">с 10:00 до 20:00</span>
-                </h4>
-                <h4 class="text__company order__right__title">
-                  Cб.:<span class="text__company">c 10:00 до 18:00</span>
-                </h4>
-                <h4 class="text__company order__right__title">
-                  Вс.: выходной
-                </h4>
-              </li>
-            </ul>
-          </div>
-          <div class="section__company__map__left__bottom">
-            <p class="text order__right__description section__company__map__subtitle">
-              Адрес офиса
-            </p>
-            <h1 class="title2 section__company__map__title">
-              «Аква-Ресурс»
-            </h1>
-            <div class="order__right__address">
-              <span class="order__right__icon"></span>
-              <a href="#" class="">
-                <p class="text__company">194017, Санкт-Петербург</p>
-                <p class="text__company">выборсгкое шоссе, 389</p>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div id="map" class="section__company__map__right"></div>
       </div>
     </section>
     <section class="section section__request">
@@ -529,7 +504,7 @@
                   </a>
                 </li>
                 <li class="footer__item footer__center__service__item">
-                  <a href="" class="text2 btn-activesection">
+                  <a href="" class="text2 btn-active">
                     Бурение скважин на воду
                   </a>
                 </li>
