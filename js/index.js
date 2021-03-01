@@ -1,5 +1,7 @@
 const item = document.querySelectorAll('.pages__questions__item');
+
 $(document).ready(function () {
+  console.log('hello')
   let bolBurger2;
   let time;
   let time2;
