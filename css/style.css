@@ -537,6 +537,14 @@ a:focus {
   margin-top: 60px;
 }
 
+/* container__generals */
+
+.container__chemistry1 {
+  display: grid;
+  grid-template-columns: 30% 60%;
+  grid-gap: 10%;
+}
+
 /* aside */
 
 .aside__list {
@@ -1790,6 +1798,12 @@ a:focus {
 }
 
 @media (max-width: 950px) {
+
+  .container__chemistry1 {
+    display: grid;
+    grid-template-columns: 30% 67%;
+    grid-gap: 3%;
+  }
 
   .order__right__title-bold__mob, .order__right__text-bold__mob {
     padding-left: 0;

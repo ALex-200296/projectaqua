@@ -14,12 +14,6 @@ h1 {
   margin: 0;
 }
 
-.container__chemistry1 {
-  display: grid;
-  grid-template-columns: 30% 60%;
-  grid-gap: 10%;
-}
-
 
 /* chemistry1 */
 
@@ -175,12 +169,7 @@ h1 {
 
   /* chemistry1 */
   /* wrap1 */
-  .container__chemistry1 {
-    display: grid;
-    grid-template-columns: 30% 67%;
-    grid-gap: 3%;
-  }
-
+ 
   .section__chemistry__general__wrap1__item__header  {
     justify-content: center;
   }
