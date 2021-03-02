@@ -1101,6 +1101,7 @@ a:focus {
 }
 
 .section__general__subitem__btn {
+  white-space: nowrap;
   padding: 8px 20px;
   border: none;
   border-radius: 100px;
