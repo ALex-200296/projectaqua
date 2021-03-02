@@ -1,4 +1,5 @@
 const item = document.querySelectorAll('.pages__questions__item');
+const asideItem = document.querySelectorAll('.aside__item')
 
 $(document).ready(function () {
   console.log('hello')
@@ -94,6 +95,20 @@ window.addEventListener('scroll', ()=> {
     });
   });
   //pages__questions
+  //aside
+  asideItem.forEach(function(i) {
+    const btn = i.children[0]
+    const ul = i.children[1]
+    btn.addEventListener('click', ()=> {
+      if(ul.style.maxHeight) {
+        ul.style.maxHeight = null;
+      }else{
+        ul.style.maxHeight = ul.scrollHeight + 'px';
+      };
+    })
+  })
+
+  //aside
 
    // Функция ymaps.ready() будет вызвана, когда
     // загрузятся все компоненты API, а также когда будет готово DOM-дерево.

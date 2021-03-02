@@ -528,6 +528,82 @@ a:focus {
 
 /* main */
 
+
+.section__generals {
+  margin-top: 90px;
+}
+
+.section__generals__title {
+  margin-top: 60px;
+}
+
+/* aside */
+
+.aside__list {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.aside__link {
+  display: block;
+  padding: 30px 30px;
+  background: #E5EDF6;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  text-align: left;
+  border: none;
+}
+
+
+.aside__item:not(:first-child) {
+  margin-top: 1px;
+}
+
+.aside__link {
+  border-top: 1px white solid;
+}
+
+.aside__link:hover,
+.aside__link:focus {
+  background: #C1D9F9;
+}
+
+.aside__link:active {
+  font-weight: bold;
+}
+
+.aside__dropdown__list {
+  max-height: 0px;
+  transition: max-height 0.4s ease-out;
+}
+
+.aside__dropdown__item {
+  border-left: 1px solid #E5EDF6;
+}
+
+.aside__dropdown__link {
+  display: block;
+  padding: 30px 30px;
+  background: #F7F7FC;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  text-align: left;
+  border: 1px solid #E5EDF6;
+  border-left: 5px solid transparent;
+}
+
+.aside__dropdown__link:hover,
+.aside__dropdown__link:focus,
+.aside__dropdown__link:active {
+  background: #C1D9F9;
+  border-left: 5px solid var(--blueD4);
+}
+
 /* order */
 
 .secton__order__container {
@@ -1747,6 +1823,14 @@ a:focus {
 
 @media (max-width: 768px) { 
 
+  .section__generals {
+    margin-top: 30px;
+  }
+  
+  .section__generals__title {
+    margin-top: 30px;
+  }
+  
   .order__btn__mobile,
   .section__equipment__mobule__group {
   display: block;
@@ -2173,6 +2257,35 @@ a:focus {
     color: white;
   }
 
+  /* aside */
+  .aside__link {
+    font-size: 12px;
+    padding: 30px 10px;
+    text-align: center;
+  }
+
+  .aside__dropdown__link {
+    font-size: 12px;
+    padding: 30px 10px;
+    text-align: center;
+  }
+
+  .aside__link:active {
+    font-weight: unset;
+    background-color: var(--blueF9);
+  }
+}
+
+@media (max-width: 550px) {
+  .aside__link {
+    font-size: 8px;
+    padding: 15px 5px;
+    }
+    .aside__dropdown__link {
+      font-size: 8px;
+      padding: 15px 5px;
+    }
+
 }
 
 @media (max-width: 450px) {
@@ -2183,6 +2296,14 @@ a:focus {
     font-size: 12px;
   }
   
+  .aside__link {
+    font-size: 8px;
+    padding: 15px 2px;
+    }
+    .aside__dropdown__link {
+      font-size: 8px;
+      padding: 15px 2px;
+    }
 }
 
 @media (max-width: 360px) {

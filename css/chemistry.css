@@ -1,0 +1,232 @@
+:root {
+  --c4: #c4c4c4;
+  --black1: #1F1F1F;
+  --blueA2: #0948A2;
+  --blueD4: #4F89D4;
+  --blueF9: #C1D9F9;
+  --F6: #E5EDF6;
+  --FC: #F7F7FC;
+  --FF: #E2EFFF;
+  --grey99: #929599;
+}
+
+h1 {
+  margin: 0;
+}
+
+.container__chemistry1 {
+  display: grid;
+  grid-template-columns: 30% 60%;
+  grid-gap: 10%;
+}
+
+
+/* chemistry1 */
+
+/* wrap1 */
+
+.section__chemistry1__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu__btn {
+  border: none;
+  background-color: transparent;
+  color: var(--blueA2);
+}
+
+.section__chemistry1__header h1 {
+  margin: 0;
+}
+
+.section__chemistry1__title {
+  margin-bottom: 60px;
+}
+
+.section__chemistry1__wrap1__text:not(:first-child) {
+  margin-top: 20px;
+}
+
+.section__chemistry1__text__color {
+  color: var(--blueD4);
+}
+
+.section__chemistry1__text__margin {
+  margin-top: 20px;
+}
+
+.section__chemistry1__wrap1__list {
+  margin-top: 20px;
+}
+
+.section__chemistry1__wrap2__subtitle {
+  margin-top: 110px;
+}
+
+.section__chemistry1__wrap2__list {
+  flex-direction: column;
+}
+
+/* wrap__general__chemistry */
+
+.section__chemistry__general__wrap1 {
+  padding: 50px 50px;
+  background: var(--FC);
+  border-radius: 10px;
+}
+
+.section__chemistry__general__wrap1__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section__chemistry__general__wrap1__header span {
+  background: var(--blueF9);
+  padding: 10px 17px;
+  border-radius: 8px;  
+}
+
+.section__chemistry__general__wrap1__text {
+  margin-top: 60px;
+}
+
+.section__chemistry__general__wrap1__list {
+  margin-top: 53px;
+  padding: 44px 42px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: #FFFFFF;
+  box-shadow: 0px 3px 10px rgba(179, 183, 200, 0.6);
+  border-radius: 10px;
+}
+
+.section__chemistry__general__wrap1__item:nth-child(odd) {
+  border-right: 1px solid var(--blueF9);
+}
+
+.section__chemistry__general__wrap1__item:nth-child(even) {
+  padding-left: 47px;
+}
+
+.section__chemistry__general__wrap1__item__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section__chemistry__general__wrap1__item__title {
+  color: var(--blueA2);
+}
+
+.section__chemistry__general__wrap1__item__text {
+  margin-top: 12px;
+  color: var(--blueD4);
+}
+
+.section__chemistry__general__wrap1__item__group__btn {
+  margin-top: 50px;
+}
+
+.section__chemistry__general__wrap1__item__group__btn button {
+  padding: 5px 15px;
+  background-color: var(--blueF9);
+  border: none;
+  border-radius: 8px;
+}
+
+.section__chemistry__general__wrap1__item__group__btn span {
+  margin: 0 13px;
+}
+
+.section__chemistry__general__wrap1__item__btn {
+  margin-top: 50px;
+}
+
+/* wrap2 */
+
+.section__chemistry__general__wrap2__text span {
+  display: block;
+}
+
+.section__chemistry__general__wrap2__item:not(:first-child) {
+  margin-top: 20px;
+}
+
+@media (max-width: 1100px) {
+
+  .section__chemistry__general__wrap1 {
+    padding: 50px 25px;
+}
+
+  .section__chemistry__general__wrap1__list {
+    padding: 44px 29px;
+  }
+}
+
+@media (max-width:1000px) {
+  .section__chemistry__general__wrap1__item:nth-child(even) {
+    padding-left: 30px; 
+  }
+}
+
+@media (max-width: 950px) {
+
+  /* chemistry1 */
+  /* wrap1 */
+  .container__chemistry1 {
+    display: grid;
+    grid-template-columns: 30% 67%;
+    grid-gap: 3%;
+  }
+
+  .section__chemistry__general__wrap1__item__header  {
+    justify-content: center;
+  }
+
+  .section__chemistry__general__wrap1__item__header span {
+    margin-left: 10px;
+  }
+
+  .section__chemistry__general__wrap1__list {
+    text-align: center;
+  }
+
+  .section__chemistry__general__wrap1__item:nth-child(even) {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .section__chemistry1__text__margin {
+    margin-top: 10px;
+  }
+  
+  .section__chemistry1__wrap1__list {
+    margin-top: 10px;
+  }
+
+  .section__chemistry1__title {
+    margin-bottom: 20px;
+  }
+
+  .section__chemistry1__wrap2__subtitle {
+    margin-top: 30px;
+  }
+
+  /* chemistry__general */
+
+  .section__chemistry__general__wrap1__list {
+    grid-template-columns: 1fr;
+  }
+
+  .section__chemistry__general__wrap1__item:nth-child(odd) {
+    border-right: unset;
+    border-bottom: 1px solid var(--blueF9);
+    padding-bottom: 20px;
+  }
+  .section__chemistry__general__wrap1__item:not(:first-child) {
+    margin-top: 20px;
+  }
+}
