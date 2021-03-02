@@ -191,10 +191,7 @@ line-height: 24px;
 }
 
 @media (max-width: 450px) {
-  #map {
-    display: none;
-  }
-
+  
   .section__company2__item {
     padding: 21px 10px 21px 10px;
 }
