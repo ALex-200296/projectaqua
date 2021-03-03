@@ -72,7 +72,6 @@ $(document).ready(function () {
 })
 
 $(window).scroll(function (event) {
-  console.log($(window).scrollTop())
  if($(window).scrollTop() >= 500) {
   $('#nav__header__mobile').removeClass('header__top__nav__mobile-active')
 

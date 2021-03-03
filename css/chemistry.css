@@ -204,10 +204,23 @@ h1 {
     margin-top: 30px;
   }
 
+  .section__chemistry__general__wrap1__item__title {
+    margin-bottom: 0;
+  }
+
+  .section__chemistry__general__wrap1__item__group__btn {
+  margin-top: 20px;
+  }
+
+  .section__chemistry__general__wrap1__item__btn {
+    margin-top: 20px;
+  }
+
   /* chemistry__general */
 
   .section__chemistry__general__wrap1__list {
     grid-template-columns: 1fr;
+    padding: 20px 29px;
   }
 
   .section__chemistry__general__wrap1__item:nth-child(odd) {
@@ -219,3 +232,15 @@ h1 {
     margin-top: 20px;
   }
 }
+
+@media (max-width: 550px) {
+  .section__chemistry__general__wrap1__list {
+    padding: 15px 10px;
+  }
+ }
+
+ @media (max-width: 320px) {
+   .section__chemistry__general__wrap1__list  {
+     padding: 10px 3px;
+   }
+ }
