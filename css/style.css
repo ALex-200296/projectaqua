@@ -288,10 +288,6 @@ a:focus {
 
 /* burger */
 
-.header__top__nav__mobile {
-  display: none;
-}
-
 .burger1,
 .burger2
  {
@@ -1260,6 +1256,35 @@ a:focus {
   color: white;
 }
 
+/* generals */
+.section__margin__top {
+  margin-top: 90px;
+}
+
+.wrapper__margin__top {
+  margin-top: 60px;
+}
+
+.text__margin__top {
+  margin-top: 40px;
+}
+
+.text__margin__small {
+  margin-top: 20px;
+}
+
+.text__color {
+  color: var(--blueA2);
+}
+
+.table__color {
+  background-color: var(--FC) !important;
+}
+
+.table__color__fd {
+  background-color: #fdfdfd;;
+}
+
 /* footer */
 
 .footer {
@@ -1415,12 +1440,12 @@ a:focus {
 
   .header__top__nav__mobile {
     position: absolute;
-    display: block;
+
     top: 18px;
     right: 0;
     transition-property: transform;
     transition-duration: 1s;
-    transform: translateX(101%);
+    transform: translateY(-105%);
     z-index: 5;
   }  
 
@@ -1430,7 +1455,7 @@ a:focus {
   
   .header__top__nav__mobile ul {
     width: 289px;
-    height: 1000px;
+    min-height: 700px;
     padding: 40px 38px;
     display: flex;
     align-items: flex-start;
@@ -1569,7 +1594,7 @@ a:focus {
     right: 0;
     transition-property: transform;
     transition-duration: 1s;
-    transform: translate(101%);
+    transform: translateY(-105%);
     z-index: 10;
   }
 
@@ -1578,7 +1603,7 @@ a:focus {
   }
 
   .header__bottom__list {
-    height: 1000px;
+    min-height: 700px;
     width: 289px;
     padding: 40px 28px;
     display: flex;
@@ -1784,6 +1809,24 @@ a:focus {
 
 @media (max-width: 950px) {
 
+  /* general */
+
+  .section__margin__top {
+    margin-top: 60px;
+  }
+  
+  .wrapper__margin__top {
+    margin-top: 40px;
+  }
+  
+  .text__margin__top {
+    margin-top: 20px;
+  }
+
+  .clean__right__list {
+    margin-top: 20px;
+  }
+
   .section__question__input {
     width: 80%
   }
@@ -1796,9 +1839,6 @@ a:focus {
   .group__btn__details{
     padding: 13px 30px; 
   }  
-}
-
-@media (max-width: 950px) {
 
   .container__chemistry1 {
     display: grid;
@@ -2301,6 +2341,13 @@ a:focus {
       padding: 15px 5px;
     }
 
+    .header__top__nav__mobile ul {
+      width: 204px;
+    }
+    .header__bottom__list {
+      width: 204px;
+      padding: 40px 15px;
+    }
 }
 
 @media (max-width: 450px) {
