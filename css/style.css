@@ -2329,9 +2329,17 @@ a:focus {
     font-weight: unset;
     background-color: var(--blueF9);
   }
+  .btn {
+    font-size: 10px;
+  }
 }
 
 @media (max-width: 550px) {
+
+  .btn {
+    font-size: 8px;
+    padding: 13px 5px;
+  }
 
   .title {
     font-size: 14px;

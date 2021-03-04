@@ -237,6 +237,24 @@ h1 {
   .section__chemistry__general__wrap1__list {
     padding: 15px 10px;
   }
+
+  .section__chemistry__general__wrap1__header {
+    flex-wrap: wrap;
+  }
+  
+  .section__chemistry__general__wrap1__header span {
+    font-size: 12px;
+    padding: 10px 3px;
+    text-align: center;
+  }
+
+  .section__chemistry__general__wrap1__text {
+    margin-top: 20px;
+  }
+  
+  .section__chemistry__general__wrap1__list {
+    margin-top: 20px;
+  }
  }
 
  @media (max-width: 320px) {
