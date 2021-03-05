@@ -2,7 +2,6 @@ const item = document.querySelectorAll('.pages__questions__item');
 const asideItem = document.querySelectorAll('.aside__item');
 
 $(document).ready(function () {
-  console.log('hello')
   let bolBurger2;
   let time;
   let time2;
@@ -83,6 +82,18 @@ $(window).scroll(function (event) {
  }
 });
 });
+
+// form__choices
+const element = document.querySelectorAll('.select');
+element.forEach( (elem) => {
+  const choices = new Choices(elem, {
+    searchEnabled: false,
+    position: 'bottom',
+    itemSelectText: ' '
+  });
+  
+})
+
 
 //clean
 $('.clean4__center__item').each(function(i) {

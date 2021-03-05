@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link 
+  rel="stylesheet" 
+  href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+  crossorigin="anonymous"
+  >
+  <link rel="stylesheet" href="../css/choices.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/filterspages.css">
+  <link rel="stylesheet" href="../css/filter__material.css">
+  <script src="../js/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+  <header class="header" id="header">
+    <nav id="nav__header__mobile" class="header__top__nav header__top__nav__mobile">
+      <ul class="header__top__list">
+        <button id="burger3" class="burger3">
+          <img src="../image/dotter2.svg" alt="burger2">
+        </button>
+        <li class="header__top__item">
+          <a href="" class="text2 header__top__link">
+            О компании
+          </a>
+        </li>
+        <li class="header__top__item">
+          <a href="" class="text2 header__top__link">
+            Статьи
+          </a>
+        </li>
+        <li class="header__top__item">
+          <a href="" class="text2 header__top__link">
+            Вопрос-ответ
+          </a>
+        </li>
+        <li class="header__top__item">
+          <a href="" class="text2 header__top__link">
+            Словарь терминов
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header__top">
+      <div class="container header__top__container">
+        <nav class="header__top__nav">
+          <ul class="header__top__list">
+            <li class="header__top__item">
+              <a href="" class="text2 header__top__link">
+                О компании
+              </a>
+            </li>
+            <li class="header__top__item">
+              <a href="" class="text2 header__top__link">
+                Статьи
+              </a>
+            </li>
+            <li class="header__top__item">
+              <a href="" class="text2 header__top__link">
+                Вопрос-ответ
+              </a>
+            </li>
+            <li class="header__top__item">
+              <a href="" class="text2 header__top__link">
+                Словарь терминов
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <label for="" class="header__top__label">
+          <input class="header__top__input" type="text">
+        </label>
+        <a href="mailto:mail@aqua-r.ru" class="header__top__mail">mail@aqua-r.ru</a>
+      </div>
+    </div>
+    <div class="header__bottom">
+     <div class="container header__bottom__container">
+      <button class="burger1">
+        <svg id="svg1" width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M0 2V0H18V2H0ZM0 7H18V5H0V7ZM0 12H18V10H0V12Z" fill="#1F1F1F"/>
+        </svg>          
+        <svg id="svg2" class="svg-active" width="18" height="12" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 1L19 17" stroke="black"/>
+          <path d="M21 3L3 16" stroke="black"/>
+        </svg>          
+      </button>
+      <a href="#">
+        <img src="../image/logo.png" alt="logo">
+      </a>
+      <nav id="header__bottom__nav1" class="header__bottom__nav">
+        <ul class="header__bottom__list">
+          <li class="header__bottom__item">
+            <a href="#" class="text header__bottom__link">
+              Анализ воды
+            </a>
+          </li>
+          <li id="service" class="header__bottom__item">
+            <button class="text header__bottom__button">
+              Услуги
+              <svg class="header__bottom__svg" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.33331 6L5.97543 1.35788L10.6175 6" stroke="#4F89D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+              <ul class="dropdown__service__list">
+                <li class="dropdown__service__item">
+                  Анализ воды
+                </li>
+                <li class="dropdown__service__item">
+                  Проектирование и монтаж систем водоочистки 
+                </li>
+                <li class="dropdown__service__item">
+                  Сервисное обслуживание
+                </li>
+                <li class="dropdown__service__item">
+                  Бурение скважин на воду
+                </li>
+              </ul>               
+          </li>
+          <li id="equipment" class="header__bottom__item">
+            <button class="text header__bottom__button">
+              Оборудование
+              <svg class="header__bottom__svg" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.33331 6L5.97543 1.35788L10.6175 6" stroke="#4F89D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>  
+            </button>
+            <ul class="dropdown__service__list">
+              <li class="dropdown__service__item">
+                <div class="dropdown__service__item__wrap">
+                  Система очистки
+                  <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.33331 6L5.97543 1.35788L10.6175 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>  
+                </div>
+                <ul class="dropdown__service__list2">
+                  <li class="dropdown__service__item2">
+                    Для дома
+                  </li>
+                  <li class="dropdown__service__item2">
+                    Для котельных
+                  </li>
+                  <li class="dropdown__service__item2">
+                    Для квартир
+                  </li>
+                  <li class="dropdown__service__item2">
+                    Для коттеджей
+                  </li>
+                </ul>
+              </li>
+              <li class="dropdown__service__item">
+                Фильтры и установки
+              </li>
+              <li class="dropdown__service__item">
+                Фильтрующие материалы
+              </li>
+              <li class="dropdown__service__item">
+                Комплектующие
+              </li>
+              <li class="dropdown__service__item">
+                Системы водоотведения
+              </li>
+            </ul>               
+          </li>
+          <li class="header__bottom__item">
+            <a href="#" class="text header__bottom__link">
+              Системы очистки
+            </a>
+          </li>
+          <li class="header__bottom__item">
+            <a href="#" class="text header__bottom__link">
+              Контакты
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__bottom__tel">
+        <p class="header__bottom__description">
+          8 (812) 385-08-06
+        </p>
+        <button href="tel:88123850806" class="btn3 header__bottom__btn btn-active">
+          Заказать звонок
+        </button>
+      </div>
+      <div class="header__bottom__group__tel">
+        <a href="tel:">
+          <img src="../image/Call.svg" alt="call">
+        </a>
+        <button id="burger2" class="burger2">
+          <img src="../image/dotter.svg" alt="burger2">
+        </button>
+      </div>
+     </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="section__filter">
+      <div class="container filter__container">
+        <nav aria-label="breadcrumb" class="section__filter__nav">
+          <ol class="breadcrumb section__filter__list">
+            <li class="breadcrumb-item"><a href="#">Главная</a></li>
+            <li class="breadcrumb-item"><a href="#">Проектирование и монтаж систем водоочистки</a></li>
+          </ol>
+          <a href="" class="section__filter__nav__link">
+            График работы пунктов приема воды
+          </a>
+        </nav>
+      </div>
+    </section>
+    <section class="section section__filter__material">
+      <div class="container">
+        <h1 class="title wrapper__margin__top">
+          <span class="text__color">Подбор оборудования:</span> 3 шага к комформу и здоровью 
+        </h1>
+        <div class="wrapper__margin__top filter__material__wrapper">
+          <div class="filter__material__wrapper__left">
+            <ul class="filter__material__wrapper__left__list">
+              <li class="filter__material__wrapper__left__item">
+                <h2 class="title2 filter__material__wrapper__left__title">
+                  Шаг 1
+                </h2>
+                <h3 class="title3 text__margin__top filter__material__wrapper__left__subtitle">
+                  бесплатный вызов замерщика
+                </h3>
+                <p class="text text__margin__top">
+                  Достаточно просто связаться с нами, и специалист нашей компании приедет к Вашему загородному дому, отберет пробу материала для дальнейших лабораторных исследований. В пределах Санкт-Петербурга и области выезд специалиста – совершенно бесплатен.
+                </p>
+              </li>
+              <li class="filter__material__wrapper__left__item">
+                <h2 class="title2 filter__material__wrapper__left__title">
+                  Шаг 2
+                </h2>
+                <h3 class="title3 text__margin__top filter__material__wrapper__left__subtitle">
+                  получения результата лабораторного исследования Вашей воды
+                </h3>
+                <p class="text text__margin__top">
+                  Точный химический анализ, произведенный несколькими методами на современном лабораторном оборудовании – это залог здоровья и нормального функционирования домашней бытовой техники. Вы получите полный протокол о составе водыс пояснениями о тех или иных веществах.
+                </p>
+              </li>
+              <li class="filter__material__wrapper__left__item">
+                <h2 class="title2 filter__material__wrapper__left__title">
+                  Шаг 3
+                </h2>
+                <h3 class="title3 text__margin__top filter__material__wrapper__left__subtitle">
+                  выбирайте лучшие условия сотрудничества с «Аква-Ресурс»
+                </h3>
+                <p class="text text__margin__top">
+                  Сразу же после получения результатов исследований Вы получите предложение комплекса услуг по решению Ваших проблем. Мы подберем оборудование для Вас индивидуально, с учетом особенностей именно Вашей воды.
+                </p>
+              </li>
+            </ul>
+            <div class="filter__material__wrapper__left__list__bottom">
+              <h2 class="title2 text__color wrapper__margin__top">
+                Сразу же после получения результатов исследований Вы получите предложение комплекса услуг по решению Ваших проблем. Мы подберем оборудование для Вас индивидуально, с учетом особенностей именно Вашей воды.
+              </h2>
+              <p class="text text__margin__top">
+                Вы получите только профессиональное оборудование для очистки воды от ведущих производителей. Оно полностью сертифицировано и соответствует не только отечественным, но и мировым стандартам качества.
+              </p>
+              <p class="text text__margin__top">
+                Мы сможем решить задачи по обеспечениючистой воды любой сложности. Специалисты «Аква-Ресурс»  возьмут полный комплекс работ на себя, что позволит Вам значительно сэкономить время, деньги и нервы. Мы осуществляем подбор, монтаж и обслуживание системы очистки воды. Более того, на все работы предоставляется полная гарантия – Вы всегда можете быть уверены в качестве и надежности наших услуг!
+              </p>
+              <p class="text text__margin__top">
+                Когда наступает  долгожданный момент въезда в загородный дом или новую квартиру – это всегда много эмоций и радости. Огромное количество средств и сил было вложено, чтобы обеспечить максимальный комфорт и качество. Однако, всегда стоит особое внимание уделить системе водоснабжения дома или коттеджа. Задумались ли Вы когда-либо о том, какая вода протекает по трубам и попадает к стиральной машине, в краны и души? Визуально прозрачная и чистая, на первый взгляд, вода может содержать огромное количество самых разнообразных примесей, которые делают ее использование довольно опасной. Согласно информации ВОЗ, почти 90% всех болезней людей связано именно с питьевой водой
+              </p>
+            </div>
+          </div>
+          <div class="filter__material__wrapper__right">
+            <form action="#" class="filter__material__wrapper__right__form">
+              <div class="select-container">
+                <h3 class="title3 filter__material__from__title text__color">
+                  Выберете источник водоснабжения*
+                </h3>
+                <select class="select" name="water_supply">
+                  <option value="">Скважина</option>
+                  <option value="">Колодец</option>
+                  <option value="">Поселковый водопровод</option>
+                </select>
+              </div>
+              <h3 class="title3 filter__material__from__title text__color text__margin__top">
+                Какие у вас проблемы с водой?*
+              </h3>
+              <div class="form__checkbox__group">
+                <label for="checkbox">
+                  <input type="radio" name="problem" id="checkbox"  class="input-check" checked>
+                  Высокое содержание железа
+                  <span></span>
+                </label>
+                <label for="checkbox2">
+                  <input type="radio" name="problem" id="checkbox2" class="input-check">
+                  Высокая жесткость
+                  <span></span>
+                </label>
+                <label for="checkbox3">
+                  <input type="radio" name="problem" id="checkbox3" class="input-check">
+                  Неприятный запах
+                  <span></span>
+                </label>
+                <label for="checkbox4">
+                  <input type="radio" name="problem" id="checkbox4" class="input-check">
+                  другое
+                  <span></span>
+                </label>
+              </div>
+              <div class="select-container text__margin__top">
+                <h3 class="title3 filter__material__from__title text__color">
+                  Объект*
+                </h3>
+                <select class="select" name="obj">
+                  <option value="">коттедж</option>
+                  <option value="">Колодец</option>
+                  <option value="">Поселковый водопровод</option>
+                </select>
+              </div>
+              <h3 class="title3 filter__material__from__title text__color text__margin__top">
+                Адрес объекта*
+              </h3>
+              <input type="text" name="address" class="filter__material__form__input">
+              <div class="select-container text__margin__top">
+                <h3 class="title3 filter__material__from__title text__color">
+                  Проживание*
+                </h3>
+                <select class="select">
+                  <option value="">Сезонное</option>
+                  <option value="">Колодец</option>
+                  <option value="">Поселковый водопровод</option>
+                </select>
+              </div>
+              <h3 class="title3 filter__material__from__title text__color text__margin__top">
+                Количество санузлов*
+              </h3>
+              <input type="text" name="bathroom" class="filter__material__form__input">
+              <h3 class="title3 filter__material__from__title text__color text__margin__top">
+                Тип канализации*
+              </h3>
+              <div class="select-container text__margin__top">
+                <h3 class="title3 filter__material__from__title text__color">
+                  Проживание*
+                </h3>
+                <select class="select" name="type_sewers">
+                  <option value="">Сезонное</option>
+                  <option value="">Колодец</option>
+                  <option value="">Поселковый водопровод</option>
+                </select>
+              </div>
+              <h3 class="title3 filter__material__from__title text__color text__margin__top">
+                Ваше ФИО*
+              </h3>
+              <input type="text" name="name" class="filter__material__form__input">
+              <h3 class="title3 filter__material__from__title text__color text__margin__top">
+                Телефон*
+              </h3>
+              <input type="tel" name="tel" class="filter__material__form__input">
+              <h3 class="title3 filter__material__from__title text__color text__margin__top">
+                E-mail*
+              </h3>
+              <input type="email" name="email" class="filter__material__form__input">
+              <h3 class="title3 filter__material__from__title text__color text__margin__top">
+                Дополнительная информация и пожелания
+              </h3>
+              <input type="text" name="info" class="filter__material__form__input">
+              <input type="submit" value="подобрать оборудование" class="btn text__margin__top group__btn__order group__btn__active filter__material__btn ">
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section__trust">
+      <div class="container trust__container">
+        <h2 class="title2 section__trust__title">
+          НАМ ДОВЕРЯЮТ
+        </h2>
+        <ul class="section__trust__list">
+          <li class="section__trust__item">
+            <img src="../image/trust1.png" alt="trust__img">
+          </li>
+          <li class="section__trust__item">
+            <img src="../image/trust2.png" alt="trust__img">
+          </li>
+          <li class="section__trust__item">
+            <img src="../image/trust3.png" alt="trust__img">
+          </li>
+          <li class="section__trust__item">
+            <img src="../image/trust4.png" alt="trust__img">
+          </li>
+          <li class="section__trust__item">
+            <img src="../image/trust5.png" alt="trust__img">
+          </li>
+          <li class="section__trust__item">
+            <img src="../image/trust6.png" alt="trust__img">
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__top">
+        <a href="">
+          <img src="../image/footerlogo.png" alt="footer__img">
+        </a>
+        <form action="" class="footer__top__form">
+          <h3 class="title3 footer__top__title">
+            ЕСТЬ ВОПРОСЫ? НАПИШИТЕ НАМ!
+          </h3>
+          <div class="footer__top__group">
+            <input type="text" placeholder="Введите ваш Email">
+            <button class="btn btn1 footer__top__btn group__btn__active">
+              ПОДПИСАТЬСЯ
+            </button>
+          </div>
+        </form>
+        <div class="footer__top__right__group">
+          <p class="title2 footer__top__tel">
+            8 (812) 385-08-06
+          </p>
+          <button class="btn-active btn__top__right__btn">
+            Заказать обратный звонок
+          </button>
+        </div>
+      </div>
+      <div class="footer__center">
+        <ul class="footer__center__wrapper">
+          <li class="footer__left">
+            <h3 class="title3 footer__left__equipment__title">ОБОРУДОВАНИЕ</h3>
+            <ul class="footer__left__list">
+              <li class="footer__item footer__left__item">
+                <a href="" class="text2 btn-active">Фильтры обезжелезирования воды: виды</a>
+              </li>
+              <li class="footer__item footer__left__item">
+                <a href="" class="text2 btn-active">Фильтры умягчения воды: снижение солей жесткости</a>
+              </li>
+              <li class="footer__item footer__left__item">
+                <a href="" class="text2 btn-active">Фильтры сорбционные</a>
+              </li>
+              <li class="footer__item footer__left__item">
+                <a href="" class="text2 btn-active">Ультрафиолетовые установки для обеззараживания воды</a>
+              </li>
+              <li class="footer__item footer__left__item">
+                <a href="" class="text2 btn-active">Фильтры грубой очистки воды</a>
+              </li>
+              <li class="footer__item footer__left__item">
+                <a href="" class="text2 btn-active">Фильтры мешочного типа</a>
+              </li>
+              <li class="footer__item footer__left__item">
+                <a href="" class="text2 btn-active">Фильтры для удаления нитратов</a>
+              </li>
+              <li class="footer__item footer__left__item">
+                <a href="" class="text2 btn-active">Дисковые фильтры AZUD</a>
+              </li>
+              <li class="footer__item footer__left__item">
+                <a href="" class="text2 btn-active">Бытовые фильтры для очистки воды</a>
+              </li>
+              <li class="footer__item footer__left__item">
+                <a href="" class="text2 btn-active">Бытовые фильтры для очистки воды</a>
+              </li>
+              <li class="footer__item footer__left__item">
+                <a href="" class="text2 btn-active">Установки ультрафильтрации воды</a>
+              </li>
+              <li class="footer__item footer__left__item">
+                <a href="" class="text2 btn-active">Мультипатронные фильтры</a>
+              </li>
+            </ul>
+          </li>
+          <li class="footer__center__center">
+            <div class="footer__center__service">
+              <h3 class="title3 footer__center__service__title">
+                УСЛУГИ
+              </h3>
+              <ul class="footer__center__service__list">
+                <li class="footer__item footer__center__service__item">
+                  <a href="" class="text2 btn-active">
+                    Проектирование и монтаж систем водоочистки
+                  </a>
+                </li>
+                <li class="footer__item footer__center__service__item">
+                  <a href="" class="text2 btn-active">
+                    Сервисное обслуживание
+                  </a>
+                </li>
+                <li class="footer__item footer__center__service__item">
+                  <a href="" class="text2 btn-active">
+                    Анализ воды в Санкт-Петербурге
+                  </a>
+                </li>
+                <li class="footer__item footer__center__service__item">
+                  <a href="" class="text2 btn-active">
+                    Бурение скважин на воду
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__center__material">
+              <h3 class="title3 footer__center__material__title">
+                ФИЛЬТРУЮЩИЕ МАТЕРИАЛЫ
+              </h3>
+              <ul class="footer__center__material__list">
+                <li class="footer__itemfooter__center__material__item">
+                  <a href="" class="text2 btn-active">
+                    Фильтрующие среды
+                  </a>
+                </li>
+                <li class="footer__itemfooter__center__material__item">
+                  <a href="" class="text2 btn-active">
+                    Ионообменные смолы
+                  </a>
+                </li>
+                <li class="footer__itemfooter__center__material__item">
+                  <a href="" class="text2 btn-active">
+                    Химические реагенты
+                  </a>
+                </li>
+                <li class="footer__itemfooter__center__material__item">
+                  <a href="" class="text2 btn-active">
+                    Активированный кокосовый уголь для очистки воды
+                  </a>
+                </li><li class="footer__itemfooter__center__material__item">
+                  <a href="" class="text2 btn-active">
+                    Многофункциональные ионообменные загрузки
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="footer__right">
+            <div class="footer__right__system">
+              <h3 class="title3 footer__right__system__title">
+                СИСТЕМЫ ОЧИСТКИ ВОДЫ
+              </h3>
+              <ul class="footer__right__system__lst">
+                <li class="footer__item footer__right__system__item">
+                  <a href="" class="text2 btn-active">
+                    Для производств
+                  </a>
+                </li>
+                <li class="footer__item footer__right__system__item">
+                  <a href="" class="text2 btn-active">
+                    Для котельных
+                  </a>
+                </li>
+                <li class="footer__item footer__right__system__item">
+                  <a href="" class="text2 btn-active">
+                    Для квартир
+                  </a>
+                </li>
+                <li class="footer__item footer__right__system__item">
+                  <a href="" class="text2 btn-active">
+                    Для производств
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__right__info">
+              <h3 class="title3 footer__right__info__title">
+                ПОЛЕЗНАЯ ИНФОРМАЦИЯ
+              </h3>
+              <ul class="footer__right__info__list">
+                <li class="footer__item footer__right__ifnfo__item">
+                  <a href="" class="text2 btn-active">
+                    Словарь терминов
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+        <div class="container footer__bottom__container">
+          <p>© 2021, Fas Production</p>
+          <a href="#header" class=" btn-active footer__bottom__link">Наверх</a>
+        </div>
+    </div>
+  </footer>
+  <script src="../js/choices.min.js"></script>
+  <script src="../js/index.js"></script>
+</body>
+</html>
