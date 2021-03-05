@@ -1,5 +1,22 @@
 const item = document.querySelectorAll('.pages__questions__item');
 const asideItem = document.querySelectorAll('.aside__item');
+const btn__services = document.querySelector('.pages__services5__wrapper4__btn');
+const services__table1 = document.querySelector('.section__table1');
+const services__table2 = document.querySelector('.section__table2');
+
+function toggleTable(button, table1, table2, classActive) {
+  button.addEventListener('click', function() {
+    if(table2.classList.contains(classActive)) {
+      button.textContent = 'СВЕРНУТЬ ТАБЛИЦУ'
+      table1.classList.add(classActive)
+      table2.classList.remove(classActive)
+    }else {
+      button.textContent = 'РАЗВЕРНУТЬ ТАБЛИЦУ'
+      table1.classList.remove(classActive)
+      table2.classList.add(classActive)
+    }
+  });
+}
 
 $(document).ready(function () {
   let bolBurger2;
@@ -82,6 +99,10 @@ $(window).scroll(function (event) {
  }
 });
 });
+
+// section__table__sevices
+
+toggleTable(btn__services, services__table1, services__table2, 'section__table-active')
 
 // form__choices
 const element = document.querySelectorAll('.select');
