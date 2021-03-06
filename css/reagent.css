@@ -68,6 +68,10 @@
   background: var(--F6);
 }
 
+.reagent2__wrap3__table thead th {
+  background: var(--FF);
+}
+
 
 @media(max-width: 950px) {
   .reagent2__wrap2__link  {

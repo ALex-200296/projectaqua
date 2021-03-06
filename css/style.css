@@ -2363,6 +2363,15 @@ a:focus {
 }
 
 @media (max-width: 450px) {
+
+  .title3 {
+    font-size: 12px;
+  }
+
+  .btn1 {
+    font-size: 10px;
+  }
+
   .section__equipment__mobule__btn:last-child {
     margin-left: 5px;
   }
