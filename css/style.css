@@ -1393,6 +1393,10 @@ a:focus {
   display: block;
 }
 
+.text__bold {
+  font-weight: bold;
+}
+
 
 @media (max-width: 1200px) {
   .container {
