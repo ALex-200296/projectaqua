@@ -101,8 +101,9 @@ $(window).scroll(function (event) {
 });
 
 // section__table__sevices
-
-toggleTable(btn__services, services__table1, services__table2, 'section__table-active')
+if(btn__services) {
+  toggleTable(btn__services, services__table1, services__table2, 'section__table-active')
+}
 
 // form__choices
 const element = document.querySelectorAll('.select');

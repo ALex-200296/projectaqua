@@ -1341,7 +1341,7 @@ a:focus {
 }
 
 .footer__top__tel {
-  color: white;
+  color: white !important;
 }
 
 .btn__top__right__btn {
@@ -1395,6 +1395,10 @@ a:focus {
 
 .text__bold {
   font-weight: bold;
+}
+
+.header__top__nav__mobile {
+  display: none;
 }
 
 
@@ -1456,6 +1460,10 @@ a:focus {
   .header__top__nav__mobile-active {
     transform: translateX(0);
   }
+
+  .header__top__nav__mobile {
+    display: block;
+  } 
   
   .header__top__nav__mobile ul {
     width: 289px;
