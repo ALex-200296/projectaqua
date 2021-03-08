@@ -136,6 +136,9 @@ link[0].classList.add('reagent2__wrap2__link__active')
  link.forEach( function(i) {
 
   i.addEventListener('click', function(j) {
+    if(j.target.classList.contains('reagent2__wrap2__link__active')) {
+      return
+    }
     openBox(j.target.getAttribute('data-link'))
     link.forEach( function (event) {
      if(j.target.getAttribute('data-link') === event.getAttribute('data-link')) {
