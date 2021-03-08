@@ -47,6 +47,7 @@
 }
 
 .reagent2__wrap2__link {
+  cursor: pointer;
   white-space: nowrap;
   padding: 16px 0;
 }

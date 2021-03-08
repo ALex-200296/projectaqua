@@ -3,6 +3,7 @@ const asideItem = document.querySelectorAll('.aside__item');
 const btn__services = document.querySelector('.pages__services5__wrapper4__btn');
 const services__table1 = document.querySelector('.section__table1');
 const services__table2 = document.querySelector('.section__table2');
+const link = document.querySelectorAll('.reagent2__wrap2__link')
 
 function toggleTable(button, table1, table2, classActive) {
   button.addEventListener('click', function() {
@@ -115,6 +116,38 @@ element.forEach( (elem) => {
   });
   
 })
+
+//reagent 
+function openBox(id) {
+  const all = document.querySelectorAll('.reagent2__wrap3')
+  for(let i = 0; i < all.length; i++) {
+    if(all[i].id == id) {
+      all[i].style.display = (all[i].style.display == 'none') ? 'block' : 'none';
+    } else {
+      all[i].style.display = 'none'
+    }
+  }
+  return false
+}
+
+if(link) {
+openBox(link[0].getAttribute('data-link'))
+ link.forEach( function(i) {
+
+  i.addEventListener('click', function(j) {
+    openBox(j.target.getAttribute('data-link'))
+    link.forEach( function (event) {
+     if(j.target.getAttribute('data-link') === event.getAttribute('data-link')) {
+        event.classList.add('reagent2__wrap2__link__active')
+        return
+      } else {
+        event.classList.remove('reagent2__wrap2__link__active')
+      } 
+     
+    })
+  })
+ })
+}
 
 
 //clean
