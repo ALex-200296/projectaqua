@@ -132,6 +132,7 @@ function openBox(id) {
 
 if(link) {
 openBox(link[0].getAttribute('data-link'))
+link[0].classList.add('reagent2__wrap2__link__active')
  link.forEach( function(i) {
 
   i.addEventListener('click', function(j) {
