@@ -53,15 +53,9 @@ body {
 
 a {
   text-decoration: none;
-  border: 1px solid transparent;
-  outline: 1px solid transparent;
+  
 }
-a:active,
-a:focus,
-a:hover {
-  border: 1px solid transparent;
-  outline: 1px solid transparent;
-}
+
 
 p {
   margin: 0;
