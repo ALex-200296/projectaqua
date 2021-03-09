@@ -118,40 +118,7 @@ element.forEach( (elem) => {
 })
 
 //reagent 
-function openBox(id) {
-  const all = document.querySelectorAll('.reagent2__wrap3')
-  for(let i = 0; i < all.length; i++) {
-    if(all[i].id == id) {
-      all[i].style.display = (all[i].style.display == 'none') ? 'block' : 'none';
-    } else {
-      all[i].style.display = 'none'
-    }
-  }
-  return false
-}
 
-if(link.length) {
-openBox(link[0].getAttribute('data-link'))
-link[0].classList.add('reagent2__wrap2__link__active')
- link.forEach( function(i) {
-
-  i.addEventListener('click', function(j) {
-    if(j.target.classList.contains('reagent2__wrap2__link__active')) {
-      return
-    }
-    openBox(j.target.getAttribute('data-link'))
-    link.forEach( function (event) {
-     if(j.target.getAttribute('data-link') === event.getAttribute('data-link')) {
-        event.classList.add('reagent2__wrap2__link__active')
-        return
-      } else {
-        event.classList.remove('reagent2__wrap2__link__active')
-      } 
-     
-    })
-  })
- })
-}
 
 
 //clean

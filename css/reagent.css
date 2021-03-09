@@ -65,7 +65,7 @@
 }
 
 .reagent2__wrap3__table thead th {
-  white-space: nowrap;
+  white-space: wrap;
   background: var(--F6);
 }
 
