@@ -2122,13 +2122,13 @@ a:focus {
 
   .section__service__list {
     grid-template-columns: 1fr 1fr;
-    grid-gap: 18px;
+    grid-gap: 20px;
   }
 
   .section__service__img {
     position: absolute;
     float: right;
-    top: -22px;
+    top: -28px;
     right: -6px;
     z-index: 2;
   }
@@ -2373,6 +2373,24 @@ a:focus {
   .btn {
     font-size: 8px;
     padding: 13px 5px;
+  }
+
+  .order__btn {
+    font-size: 12px;
+    padding: 13px 20px;
+  }
+
+  .group__btn__details {
+    padding: 13px 20px;
+    margin-left: 15px;
+  }
+
+  .section__service__list {
+    grid-template-columns: 1fr;
+  }
+
+  .section__equipment__btn {
+    font-size: 10px;
   }
 
   .title {
