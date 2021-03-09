@@ -130,7 +130,7 @@ function openBox(id) {
   return false
 }
 
-if(link) {
+if(link.length) {
 openBox(link[0].getAttribute('data-link'))
 link[0].classList.add('reagent2__wrap2__link__active')
  link.forEach( function(i) {

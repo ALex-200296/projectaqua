@@ -53,6 +53,14 @@ body {
 
 a {
   text-decoration: none;
+  border: 1px solid transparent;
+  outline: 1px solid transparent;
+}
+a:active,
+a:focus,
+a:hover {
+  border: 1px solid transparent;
+  outline: 1px solid transparent;
 }
 
 p {
@@ -203,6 +211,7 @@ a:focus {
 }
 
 .btn__general-active {
+  outline: none;
   transition-property: background, color;
   transition-duration: 0.2s;
 }
@@ -213,6 +222,7 @@ a:focus {
 }
 
 .btn__general-active:active {
+  outline: none;
   background: var(--blueD4);
   color: white;
 }
@@ -407,6 +417,10 @@ a:focus {
   background: var(--blueA2);
   border-radius: 5px;
   z-index: 10;
+}
+
+.dropdown__service__item  a{
+  color: #FFFFFF;
 }
 
 .dropdown__service__item {
@@ -862,6 +876,7 @@ a:focus {
   transition-property: filter, transform, background, color;
   transition-duration: 0.2s;
   outline: none;
+  outline-color: none;
 }
 
 .section__service__item:hover,
@@ -870,6 +885,7 @@ a:focus {
   background-color: var(--blueD4);
   filter: drop-shadow(0px 12px 24px rgba(54, 123, 245, 0.3));
 }
+
 
 .section__service__item:hover .section__service__circle,
 .section__service__item:focus .section__service__circle {
@@ -1097,11 +1113,17 @@ a:focus {
 }
 
 .section__general__subitem__btn {
+  cursor: pointer;
   white-space: nowrap;
   padding: 8px 20px;
   border: none;
   border-radius: 100px;
   background-color: var(--FF);
+  outline: none;
+}
+
+.section__general__subitem__btn:active {
+  outline: none;
 }
 
 .section__general__wrpper {
