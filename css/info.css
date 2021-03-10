@@ -181,7 +181,7 @@
 
 .section__info4__container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 58% 34%;
   grid-gap: 90px;
 }
 
@@ -191,6 +191,7 @@
   }
 
   .section__info4__container {
+    grid-template-columns: 62% 37%;
     grid-gap: 10px;
   }
 }
@@ -210,5 +211,12 @@
 
   .section__info4__right__wrap {
     padding: 40px 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .section__info4__right__wrap {
+    padding: 20px 5px;
+    grid-gap: 0;
   }
 }

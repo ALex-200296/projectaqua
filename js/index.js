@@ -112,7 +112,8 @@ element.forEach( (elem) => {
   const choices = new Choices(elem, {
     searchEnabled: false,
     position: 'bottom',
-    itemSelectText: ' '
+    itemSelectText: ' ',
+    
   });
   
 })
@@ -144,8 +145,14 @@ item.forEach( function(i) {
   li.addEventListener('click', () => {
     if(p.style.maxHeight) {
       p.style.maxHeight = null;
+      if(p.style.maxHeight == 0) {
+        p.style.marginTop = '0'
+      }
     }else{
       p.style.maxHeight = p.scrollHeight + 'px';
+      if(p.style.maxHeight == p.scrollHeight + 'px') {
+        p.style.marginTop = '40px'
+      }
     };
   });
 });

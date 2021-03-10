@@ -74,30 +74,6 @@
 
 /* table */
 
-.section__table {
-  margin-top: 75px;
-  border-radius: 10px;
-  overflow: hidden;
-  border: 1px solid #C1D9F9;
-}
-
-.table__head {
-  filter: drop-shadow(0px 3px 10px rgba(179, 183, 200, 0.6));
-}
-
-.table__head th {
-  background: var(--F6);
-}
-
-
-.table-active, .table-active>td, .table-active>th {
-  background-color: white;
-}
-
-.table-active, .table-active>td, .table-active>th:first-child {
-  background: var(--FC);
-}
-
 @media (max-width: 1140px) {
 
   .section__filter__subtitle__wrapper {
