@@ -1,0 +1,353 @@
+:root {
+  --c4: #c4c4c4;
+  --black1: #1F1F1F;
+  --blueA2: #0948A2;
+  --blueD4: #4F89D4;
+  --blueF9: #C1D9F9;
+  --F6: #E5EDF6;
+  --FC: #F7F7FC;
+  --FF: #E2EFFF;
+  --grey99: #929599;
+}
+
+/* clean */
+
+.container__clean {
+  display: grid;
+  grid-template-columns: 49% 44%;
+  grid-gap: 79px;
+}
+
+.clean__right img {
+  width: 100%;
+}
+
+.clean__right__list {
+  flex-direction: column;
+}
+
+.clean__right__item:first-child {
+  margin-top: 0;
+}
+
+.clean__right__item:not(:first-child) {
+  margin-top: 16px;
+}
+
+/* clean4 */
+.clean4__header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 95px;
+}
+
+.clean4__header__right img {
+  width: 100%;
+}
+
+.clean4__center__header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 60px;
+}
+
+.clean4__center__item {
+  margin-top: 60px;
+}
+
+.clean4__center__header {
+  padding: 65px 65px;
+  background: var(--FC);
+  border-radius: 10px;
+}
+
+.clean4__center__header__left {
+  padding: 43px 30px;
+  background: #FFFFFF;
+  box-shadow: 0px 3px 10px rgba(179, 183, 200, 0.6);
+  border-radius: 10px;
+}
+
+.clean4__center__header__left__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.clean4__center__header__left__text__black {
+  color: var(--black1);
+}
+
+.clean4__center__header__left__text {
+  margin-top: 10px;
+  padding-right: 39%;
+}
+
+.clean4__center__header__left__btn {
+  color: var(--blueD4);
+}
+
+.clean4__center__header__left__img {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 70px;
+}
+
+.clean4__center__header__left__wrap h3 {
+  margin: 0;
+}
+
+.clean4__center__header__right__table {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.clean4__center__header__right__table thead th {
+  white-space: nowrap;
+  background-color: var(--blueF9);
+}
+
+.clean4__center__header__right__table tbody th {
+  white-space: nowrap;
+  background-color: var(--FF);
+}
+
+.clean4__center__header__right__table tbody td {
+  white-space: nowrap;
+  background-color: #fdfdfd;
+}
+
+.table td, .table th {
+  padding: 8px 10px;
+  text-align: center;
+}
+
+.clean4__center__header__right__bottom {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.clean4__center__header__right__bottom__group span {
+  color: var(--blueA2);
+}
+
+.clean4__center__bottom__card {
+  padding: 60px 62px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-left: 2px solid #E5EDF6;
+  border-right: 2px solid #E5EDF6;
+  border-bottom: 2px solid #E5EDF6;
+  transform: translateY(-6px);
+  transition: max-height 0.4s ease-out;
+  display: none;
+}
+
+
+
+
+.clean4__center__bottom__card__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clean4__center__bottom__table {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.clean4__center__bottom__table thead th {
+  background-color: var(--blueF9);
+}
+
+.clean4__center__bottom__table tbody td {
+  background-color: #fdfdfd;
+}
+
+.table__color {
+  background-color: var(--FC) !important;
+}
+
+.clean4__center__bottom__card__center {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 95px;
+}
+
+.clean4__center__bottom__card__center2__list {
+  list-style-type: disc;
+}
+
+.clean4__center__bottom__table thead th {
+  white-space: nowrap;
+}
+
+.clean4__center__bottom__table2 tbody th {
+  background-color: var(--FF);
+}
+
+.clean4__center__bottom__table2 thead th {
+  white-space: nowrap;
+}
+
+.clean4__center__bottom__table2 tbody td {
+  white-space: nowrap;
+}
+
+.clean4__center__bottom__card__bottom__text {
+  color: var(--grey99);
+  padding-right: 30%;
+}
+
+.clean4__bottom {
+  display: grid;
+  grid-template-columns: 60% 34%;
+  grid-gap: 66px;
+  margin-top: 160px;
+}
+
+.clean4__bottom__left__title:not(:first-child) {
+  margin-top: 60px;
+}
+
+.clean4__bottom__right img{
+  width: 100%;
+}
+
+@media (max-width: 1100px) {
+  .container__clean {
+    grid-gap: 30px;
+  }
+
+  .clean4__center__header__left  {
+    padding: 43px 15px;
+  }
+
+  .clean4__center__header__left__btn  {
+    font-size: 12px;
+  }
+
+  .clean4__center__header__left__text  {
+    padding-right: 15%;
+  }
+
+
+}
+
+@media (max-width: 950px) {
+
+  .clean__right__list {
+    margin-top: 20px;
+  }
+
+  .clean4__center__header {
+    grid-gap: 20px;
+    padding: 65px 20px;
+  }
+}
+
+@media (max-width: 950px) {
+  .container__clean {
+    grid-template-columns: 1fr;
+  }
+
+  .clean__right img{
+    width: 100%;
+  }
+
+  .clean__right__list {
+    flex-direction: row;
+  }
+
+  .clean4__header  {
+    grid-gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .clean4__header {
+    grid-template-columns: 1fr;
+  }
+
+  .clean4__header__right {
+    display: none;
+  }
+
+  .clean4__center__header  {
+    grid-template-columns: 1fr;
+    padding: 35px 20px;
+  }
+
+  .clean4__center__header__left  {
+    padding: 43px 30px;
+  }
+
+  .clean4__center__header__right__bottom {
+    margin-top: 15px;
+    justify-content: space-around;
+  }
+
+  .clean4__center__bottom__card {
+    padding: 30px 20px;
+  }
+
+  .clean4__center__bottom__card__center {
+    grid-gap: 30px;
+  }
+
+  .clean4__bottom {
+    margin-top: 60px;
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+  }
+  
+  .clean4__bottom__left__title:not(:first-child) {
+    margin-top: 60px;
+  }
+  
+  .clean4__bottom__right img {
+    display: none;
+  }
+}
+
+@media (max-width: 620px) {
+  .clean4__center__header__right__table thead th {
+    font-size: 8px;
+  }
+
+  .clean4__center__header__right__table tbody th,
+  .clean4__center__header__right__table tbody td {
+    font-size: 8px;
+  } 
+  .clean4__center__bottom__table th {
+    font-size: 8px;
+  }
+
+  .clean4__center__bottom__table th,
+  .clean4__center__bottom__table td {
+    font-size: 8px;
+  } 
+}
+
+@media (max-width: 550px) {
+  .table td, .table th {
+    padding: 8px 0px;
+    text-align: center;
+  }
+  .clean4__center__bottom__card__center {
+    grid-template-columns: 1fr;
+  }
+ }
+
+ @media (max-width: 350px) {
+  .clean4__center__header__right__table tbody th {
+    white-space: pre-wrap;
+  }
+  .clean4__center__bottom__table2 thead th {
+    white-space: normal;
+  }
+}

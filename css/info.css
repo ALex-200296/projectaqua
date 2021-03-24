@@ -185,6 +185,10 @@
   grid-gap: 90px;
 }
 
+.section__info4__right__list {
+  margin-top: 22px;
+}
+
 @media (max-width: 950px) {
   .info2__list {
     grid-template-columns: 1fr 1fr;

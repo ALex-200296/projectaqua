@@ -11,7 +11,7 @@
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
     crossorigin="anonymous"
   >
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="style.css">
   <script src="js/jquery-3.5.1.min.js"></script>
 </head>
 <body>
@@ -307,7 +307,8 @@
       </div>
     </section>
     <section class="section__advantages">
-      <div class="container container__advantages">
+      <div class="container">
+       <div class="container__advantages">
         <ul class="section__advantages__list">
           <li class="section__advantages__item">
             <span class="section__advantages__icon section__advantages_icon1"></span>
@@ -336,6 +337,7 @@
             </p>
           </li>
         </ul>
+       </div>
       </div>
     </section>
     <section class="section__service">
@@ -723,11 +725,7 @@
                 </p>
               </div>
               <div class="general__wrapper__right">
-                <img src="./image/general3_1.png" alt="general__img" class="general__wrapper__right__img general__wrapper__right__img1">
-                <img src="./image/general3_2.png" alt="general__img" class="general__wrapper__right__img general__wrapper__right__img2">
-                <img src="./image/general3_3.png" alt="general__img" class="general__wrapper__right__img general__wrapper__right__img3">
-                <img src="./image/general5.png" alt="general__img" class="general__wrapper__right__img general__wrapper__right__img4">
-                
+                <img src="./image/КАРТИНКА.png" alt="general__img" class="general__wrapper__right__img">
                 <div class="general__wrapper__right__btn">
                   <button class="btn group__btn__order group__btn__active general__wrapper__right__btn__order">
                     ЗАКАЗАТЬ
@@ -841,6 +839,44 @@
             ОСТАВИТЬ ЗАЯВКУ
           </button>
         </form>
+      </div>
+    </div>
+    <div class="container" style="margin-top:10px;">
+      <div class="general__modal">
+        <form class="general__modal__form">
+          <h2 class="title2 general__modal__title">
+            ОСТАВИТЬ ЗАЯВКУ
+          </h2>
+          <p class="title4 general__modal__text">
+            Наши менеджеры свяжутся с вами в ближайшее время
+          </p>
+          <div class="general__modal__group">
+            <div class="general__modal__left">
+              <input type="text" class="general__modal__input" placeholder="ФИО">
+              <input type="tel" class="general__modal__input" placeholder="Телефон">
+              <input type="text" class="general__modal__input" placeholder="E-mail">
+            </div>
+            <div class="general__modal__right">
+              <textarea id="" class="general__modal__textarea" placeholder="Ваше сообщение"></textarea>
+            </div>
+          </div>
+          <button class="btn btn1 general__modal__btn general__modal__btn1 group__btn__active">
+            ОСТАВИТЬ ЗАЯВКУ
+          </button>
+        </form>
+        <div class="general__modal__form  general__modal-active">
+          <div class="general__modal__success">
+            <h2 class="title2 general__modal__success__title">
+              СПАСИБО ЗА ОСТАВЛЕННУЮ ЗАЯВКУ!
+            </h2>
+            <p class="title4 general__modal__success__text">
+              Наши менеджеры свяжутся с вами в ближайшее время
+            </p>
+          </div>
+          <button class="btn btn1 general__modal__btn general__modal__btn2 group__btn__active">
+            ВЕРНУТЬСЯ НА СТРАНИЦУ
+          </button>
+        </div>
       </div>
     </div>
   </main>
@@ -1016,7 +1052,7 @@
     </div>
     <div class="footer__bottom">
         <div class="container footer__bottom__container">
-          <p>© 2021, <span class="footer__fas">Fas</span> Production</p>
+          <p class="footer__fas">© 2021, <span class="footer__fas">Fas</span> Production</p>
           <a href="#header" class=" btn-active footer__bottom__link">Наверх</a>
         </div>
     </div>

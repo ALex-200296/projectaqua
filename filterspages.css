@@ -14,7 +14,7 @@
 /* header */
 
 .header__bottom__container {
-  border-bottom: 1px solid #E5EDF6;
+  /* border-bottom: 1px solid #E5EDF6; */
 }
 
 /* filter */
@@ -27,7 +27,7 @@
 .section__filter__list {
   margin-right: auto;
   margin-top: 40px;
-  background-color: transparent !important;
+  background: transparent;
   padding: 0.75rem 0rem !important;
 }
 
@@ -36,9 +36,7 @@
 }
 
 .section__filter__nav__link {
-  white-space: nowrap;
   margin-top: 19px;
-  margin-left: 15px;
   border-bottom: 1px solid var(--blueD4);
   color: var(--blueD4);
 }

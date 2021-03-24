@@ -3,7 +3,42 @@ const asideItem = document.querySelectorAll('.aside__item');
 const btn__services = document.querySelector('.pages__services5__wrapper4__btn');
 const services__table1 = document.querySelector('.section__table1');
 const services__table2 = document.querySelector('.section__table2');
-const link = document.querySelectorAll('.reagent2__wrap2__link')
+const link = document.querySelectorAll('.reagent2__wrap2__link');
+const btn__modal = document.querySelector('.general__modal__btn1');
+const btn__modal2 = document.querySelector('.general__modal__btn2');
+const modal__form = document.querySelectorAll('.general__modal__form')
+// modal
+
+if(btn__modal) {
+  btn__modal.addEventListener('click', (event) => {
+    event.preventDefault();
+    modal__form.forEach( el => {
+      el.classList.contains('general__modal-active') ? el.classList.remove('general__modal-active') : el.classList.add('general__modal-active')
+    })
+// $.ajax({
+//     url: ".php",
+//     type: "POST",
+//     dataType: "JSON",
+//     data: {"dataLogin" : jlogin},
+//     success: function(data, textStatus, xhr) {
+//       modal__form.forEach( el => {
+//         el.classList.contains('general__modal-active') ? el.classList.remove('general__modal-active') : el.classList.add('general__modal-active')
+//       })
+//     },
+//     error: function(xhr, textStatus, errorThrown) {
+        
+//     }
+// });
+  })
+  btn__modal2.addEventListener('click', () => {
+    modal__form.forEach( el => {
+      el.classList.contains('general__modal-active') ? el.classList.remove('general__modal-active') : el.classList.add('general__modal-active')
+      window.location.href = '/'
+    })
+  })
+}
+
+// endmodal
 
 function toggleTable(button, table1, table2, classActive) {
   button.addEventListener('click', function() {
