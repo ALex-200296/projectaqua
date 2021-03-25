@@ -63,7 +63,7 @@
 .section__filter__subtitle__wrapper__left__btn {
   margin-top: 55px;
   padding: 16px 69px;
-  color: white;
+  color: white !important;
 }
 
 .section__filter__subtitle__wrapper__right {
