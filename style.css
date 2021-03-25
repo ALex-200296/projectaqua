@@ -1666,6 +1666,10 @@ line-height: 16px;
   background: #E5EDF6;
 }
 
+.content__left__height {
+  height: 100%;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 1138px;
