@@ -6,7 +6,9 @@ const services__table2 = document.querySelector('.section__table2');
 const link = document.querySelectorAll('.reagent2__wrap2__link');
 const btn__modal = document.querySelector('.general__modal__btn1');
 const btn__modal2 = document.querySelector('.general__modal__btn2');
-const modal__form = document.querySelectorAll('.general__modal__form')
+const modal__form = document.querySelectorAll('.general__modal__form');
+const aside__active = document.querySelector('.aside__list__active');
+const aside__span = document.querySelectorAll('.aside__dropdown__span');
 // modal
 
 if(btn__modal) {
@@ -175,16 +177,19 @@ $('.clean4__center__item').each(function(i) {
 
 //pages__questions
 item.forEach( function(i) {
+  const btn = i.childNodes[1].children[1].children[0];
   const li  = i.childNodes[1];
   const p = i.childNodes[3];
   li.addEventListener('click', () => {
     if(p.style.maxHeight) {
+      btn.style.transform = 'rotate(0)';
       p.style.maxHeight = null;
       if(p.style.maxHeight == 0) {
         p.style.marginTop = '0'
       }
     }else{
       p.style.maxHeight = p.scrollHeight + 'px';
+      btn.style.transform = 'rotate(45deg)';
       if(p.style.maxHeight == p.scrollHeight + 'px') {
         p.style.marginTop = '40px'
       }
@@ -198,14 +203,18 @@ asideItem.forEach(function(i) {
   const ul = i.children[1]
   btn.addEventListener('click', ()=> {
     if(ul.style.maxHeight) {
+    
+     
       ul.style.maxHeight = null;
     }else{
+
       ul.style.maxHeight = ul.scrollHeight + 'px';
     };
   })
 })
 
 //aside--end
+
 
 // Функция ymaps.ready() будет вызвана, когда
 // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
@@ -217,16 +226,32 @@ function init(){
         // Порядок по умолчанию: «широта, долгота».
         // Чтобы не определять координаты центра карты вручную,
         // воспользуйтесь инструментом Определение координат.
-        center: [60.08259258995241,30.26536116633978],
+        center: [60.08347832771884,30.264567486793734],
         // Уровень масштабирования. Допустимые значения:
         // от 0 (весь мир) до 19.
         zoom: 18,
     })
-    myMap.geoObjects.add(  new ymaps.Placemark([60.08259258995241,30.26536116633978], {
-      iconLayout: 'default#image',
-      iconImageHref: '../image/placeholder.svg',
-      iconCaption: 'Выборское ш.,389, Санкт-Петербург ...',
-      iconImageSize: [30, 42],
-      iconImageOffset: [-3, -42],
-  },));
+    var myPlacemark = new ymaps.Placemark([60.083456888331625,30.264921538383707], {
+      iconContent:  ' <strong style="white-space:nowrap;color:red;">выборское ш., 389,<br/>Санкт-Петербург...</strong>'
+    }, {
+      iconLayout: 'default#imageWithContent',
+      iconImageHref: '../image/svg/placeholder.svg',
+      iconImageSize: [40, 70],
+      iconImageOffset: [-43, -40],
+      iconContentOffset: [45, 5],
+      iconColor: '#3b5998'
+    });
+    var myPlacemark2 = new ymaps.Placemark([60.0829889032222,30.264291219265196], {
+      iconContent:  ' <strong style="white-space:nowrap;color:#78909C;">СЕВЕРО-ЗАПАДНЫЙ<br/>БАЛТИЙСКИЙ АЛЬЯНС</strong>'
+    }, {
+      iconLayout: 'default#imageWithContent',
+      iconImageHref: '../image/svg/placeholder2.svg',
+      iconImageSize: [40, 70],
+      iconImageOffset: [-43, -40],
+      iconContentOffset: [-22, -15],
+      iconColor: '#78909C'
+    });
+    // Размещение геообъекта на карте.
+  myMap.geoObjects.add(myPlacemark);
+  myMap.geoObjects.add(myPlacemark2);
 }
