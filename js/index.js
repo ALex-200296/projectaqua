@@ -4,12 +4,30 @@ const btn__services = document.querySelector('.pages__services5__wrapper4__btn')
 const services__table1 = document.querySelector('.section__table1');
 const services__table2 = document.querySelector('.section__table2');
 const link = document.querySelectorAll('.reagent2__wrap2__link');
+const generalModal = document.querySelector('.general__modal');
 const btn__modal = document.querySelector('.general__modal__btn1');
 const btn__modal2 = document.querySelector('.general__modal__btn2');
 const modal__form = document.querySelectorAll('.general__modal__form');
 const aside__active = document.querySelector('.aside__list__active');
 const aside__span = document.querySelectorAll('.aside__dropdown__span');
 // modal
+
+function popap(btn, modal, modalForm) {
+  btn.addEventListener('click', () => {
+    modal.style.visibility = 'hidden' ? 'visible' : 'hidden'; 
+    modalForm.forEach( (el, idx) => {
+    idx ===0 ? el.classList.remove('general__modal-active') : el.classList.add('general__modal-active');
+    })
+  })
+
+  modal.addEventListener('click', function(e) {
+    if(e.target.className ===  modal.className) {
+      modal.style.visibility = 'hidden'
+    }
+  })
+}
+
+popap(document.querySelector('.popap',), generalModal, modal__form);
 
 if(btn__modal) {
   btn__modal.addEventListener('click', (event) => {
@@ -39,6 +57,7 @@ if(btn__modal) {
     })
   })
 }
+
 
 // endmodal
 
