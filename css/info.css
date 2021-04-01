@@ -89,6 +89,11 @@
   color: var(--blueA2);
 }
 
+.info3__link::after {
+  content:  url('../image/Arrow5.svg');
+  padding-left: 20px;
+}
+
 .info3__list {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -97,14 +102,6 @@
 
 .info3__item__wrap {
   display: flex;
-}
-
-.info3__item__wrap span {
-  background-image: url('../image/Arrow5.svg');
-  background-repeat: no-repeat;
-  margin-left: 20px;
-  width: 40px;
-  transform: translateY(5px);
 }
 
 .info2__list {
