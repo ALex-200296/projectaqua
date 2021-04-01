@@ -16,7 +16,7 @@ function popap(btn, modal, modalForm) {
   btn.addEventListener('click', () => {
     modal.style.visibility = 'hidden' ? 'visible' : 'hidden'; 
     modalForm.forEach( (el, idx) => {
-    idx ===0 ? el.classList.remove('general__modal-active') : el.classList.add('general__modal-active');
+    idx === 0 ? el.classList.remove('general__modal-active') : el.classList.add('general__modal-active');
     })
   })
 
@@ -27,7 +27,9 @@ function popap(btn, modal, modalForm) {
   })
 }
 
-popap(document.querySelector('.popap',), generalModal, modal__form);
+if(document.querySelector('.popap',)) {
+  popap(document.querySelector('.popap',), generalModal, modal__form);
+}
 
 if(btn__modal) {
   btn__modal.addEventListener('click', (event) => {

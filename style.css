@@ -835,6 +835,12 @@ line-height: 16px;
   background-color: #F7F7FC;
 }
 
+.order__right__mr {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .order__right__description {
   color: var(--blueA2);
 }
